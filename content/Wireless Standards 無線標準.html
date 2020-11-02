@@ -1,24 +1,139 @@
-<h1>HW1</h1>
-<h2>PCH 15 Introduction to Wireless Networking無線網絡簡介</h2>
-<h3>Wireless LANs 無線局域網</h3>
-<h4>Overview 總覽</h4>
-<p>The popularity of wireless local area networks (WLAN) has increased exponentially because WLAN enables people to remain connected to the network and the Internet without being tethered by wires. In this unit, we are going to cover the concepts, components, standards, design considerations, and security of WLANs. IEEE 802.11 is the overarching standard for wireless LAN technology, and was developed and is maintained by the Institute of Electrical and Electronics Engineers (IEEE) to provide wireless Ethernet connectivity to a wired IEEE 802.3 network.</p>
-<p>無線局域網（WLAN）的普及已成倍增加，因為WLAN使人們能夠保持連接到網絡和Internet，而不必受到電線的束縛。 在本單元中，我們將介紹WLAN的概念，組件，標準，設計注意事項和安全性。 IEEE 802.11是無線LAN技術的總體標準，由電氣和電子工程師協會（IEEE）開發和維護，以提供與有線IEEE 802.3網絡的無線以太網連接。</p>
-<h4>WLAN Concepts WLAN概念</h4>
-<p>Wireless local area networks are broken down into two generalized categories: ad-hoc WLANs and infrastructure WLANs. In ad hoc wireless networks, the wireless devices communicate directly with each other without the need for a wireless access point. This mode is similar to a peer-to-peer network topology, where each device connects to each other device in a mesh configuration using radio frequency waves directly between each wireless device’s interface card. This is the wireless equivalent of connecting two workstations together using a crossover cable, thereby eliminating the need for network infrastructure like hubs and switches.</p>
-<p>The second category, infrastructure WLANs, is the version that is most often and widely utilized. When operating in infrastructure mode, the wireless devices communicate to a centralized wireless router or wireless access point, and then use that centralized device to initiate communication with other wireless or wired devices that are also attached to the centralized device. This is the wireless equivalent of connecting multiple workstations to a common hub or switch and utilizing that network device to create communication between the workstations.</p>
-<p>無線局域網分為兩大類：即席WLAN和基礎設施WLAN。在自組織無線網絡中，無線設備之間直接相互通信，而無需無線接入點。此模式類似於點對點網絡拓撲，在這種拓撲中，每個設備都在網狀配置中使用射頻波直接在每個無線設備的接口卡之間連接到彼此。這相當於使用交叉電纜將兩個工作站連接在一起的無線方式，從而消除了對集線器和交換機等網絡基礎設施的需求。<br/>第二類是基礎設施WLAN，是最常用和廣泛使用的版本。當在基礎結構模式下運行時，無線設備與集中式無線路由器或無線接入點進行通信，然後使用該集中式設備來啟動與也連接到該集中式設備的其他無線或有線設備的通信。這相當於將多個工作站連接到公共集線器或交換機，並利用該網絡設備在工作站之間創建通信。</p>
-<h3>Wireless Devices 無線設備</h3>
-<p>As previously stated, most wireless networks utilize infrastructure mode and make use of a wireless router or wireless access point to connect the multitude of wireless devices in a given network. A wireless router is used in most small office/home office (SOHO) networks. These devices combine a router, a switch, and a wireless access point and serve as a base station and gateway for the wireless devices. The wireless router allows the wireless devices to communicate with each other using its wireless access point and switch functionality, and then uses its router functionality to connect devices to the remote network: in most cases, the Internet. The wireless router often combines multiple devices into a single, small device. These features include a wireless access point (WAP), a switch, a router, a firewall, and a modem (either cable, fiber, or DSL depending on the Internet service provider).</p>
-<p style="text-align: left;">Wireless access points, which are integrated into SOHO wireless routers, can also be purchased as standalone units. These are most often seen in corporate environments as part of an enterprise network. A wireless access point enables a wired LAN to communicate with a wireless LAN. The standalone WAP does not interconnect the two networks, though, since it is not a router. A WAP is simply a physical device that converts the radio frequency into 1s and 0s that are easily understood by the physical switch. Note that all wireless devices and the devices on the wired LAN are seen as a single subnet in a standard network. A WAP operates like a hub, broadcasting all the information it receives over the radio frequency waves and relying on the connected devices to only listen to their own traffic.</p>
-<p>如前所述，大多數無線網絡都利用基礎架構模式，並利用無線路由器或無線接入點來連接給定網絡中的眾多無線設備。在大多數小型辦公室/家庭辦公室（SOHO）網絡中使用無線路由器。這些設備將路由器，交換機和無線接入點結合在一起，並充當無線設備的基站和網關。無線路由器允許無線設備使用其無線接入點和交換機功能相互通信，然後使用其路由器功能將設備連接到遠程網絡：在大多數情況下為Internet。無線路由器通常將多個設備組合為一個小型設備。這些功能包括無線接入點（WAP），交換機，路由器，防火牆和調製解調器（取決於Internet服務提供商，是電纜，光纖還是DSL）。</p>
-<p>集成到SOHO無線路由器中的無線訪問點也可以作為獨立單元購買。這些通常在公司環境中被視為企業網絡的一部分。無線訪問點使有線局域網能夠與無線局域網進行通信。但是，獨立的WAP無法將兩個網絡互連，因為它不是路由器。 WAP只是將無線電頻率轉換為1和0的物理設備，物理交換機很容易理解。請注意，所有無線設備和有線LAN上的設備在標準網絡中都被視為單個子網。 WAP就像集線器一樣工作，它會通過射頻波廣播接收到的所有信息，並依靠連接的設備僅監聽其自身的流量。</p>
-<p style="text-align: center;"><img alt="Picture of a wireless router plugged into the wall. The device is silver and black with a short antenna. There are four green illuminated indicator lights labeled power, status, WAN, and WLAN. There is a section labeled “local network,” with the numbers 1, 2, 3, and 4, and an area labeled “phone.” A logo says “powered by D-Link.”" height="314" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH15/webcontent/PCH15/image1.jpeg" width="470"/></p>
-<p style="text-align: center;">Kyocera KR1 Mobile EV-DO router. Photo used under CC-BY-NC license from Scott Beale.</p>
-<p style="text-align: left;">Wireless network interface cards (NICs) for WiFi, Bluetooth, and infrared are generally integrated into motherboard circuitry. If your computer doesn’t have one built in, you have the ability to add one either using an external USB wireless network adapter, or installing one in a PCIe expansion slot; just remember to install the appropriate drivers for your operating system to enable proper operations.</p>
-<p style="text-align: left;">用於WiFi，藍牙和紅外的無線網絡接口卡（NIC）通常集成在主板電路中。 如果您的計算機沒有內置計算機，則可以使用外部USB無線網絡適配器添加計算機，也可以在PCIe擴展插槽中安裝計算機。 只需記住為您的操作系統安裝適當的驅動程序即可啟用正確的操作。</p>
-<p style="text-align: left;"></p>
-<h3 style="text-align: left;">Wireless Standards無線標準</h3>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923248 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923248 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='PCH 15 Introduction to Wireless Networking 無線網絡簡介.html'>PCH 15 Introduction to Wireless Networking 無線網絡簡介</a><ul class='dropdown'><li><a href='Wireless LANs 無線局域網.html'>Wireless LANs 無線局域網</a><li><a href='Wireless Devices 無線設備.html'>Wireless Devices 無線設備</a><li><a href='Wireless Standards 無線標準.html'>Wireless Standards 無線標準</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Wireless Devices 無線設備 << <a href='Wireless Devices 無線設備.html'>Previous</a> <br /><h1>Wireless Standards 無線標準</h1>
 <h4 style="text-align: left;">Background and History 背景和歷史</h4>
 <p>Wireless (Wi-Fi) networking speeds, the technology behind broadcast streams, and wireless security have greatly improved user connectivity, which in turn has increased the use of multi-purpose devices such as smartphones and tablets in corporate and SOHO networks. The freedom of Wi-Fi has become the infrastructure of choice and essentially relegated wired networks more to moving mass data traffic and less user traffic. Although it will not eliminate the wired infrastructure, because Wi-Fi access points need to connect to a wired device using the Ethernet standard, Wi-Fi allows greater expandability and access for IT departments in both corporate and SOHO environments.</p>
 <p>無線（Wi-Fi）網絡速度，廣播流背後的技術以及無線安全性極大地改善了用戶連接性，進而增加了企業和SOHO網絡中諸如智能手機和平板電腦等多功能設備的使用。 Wi-Fi的自由度已成為首選的基礎架構，從本質上講，降低了有線網絡的傳輸效率，使之可以移動海量數據流量而減少用戶流量。儘管不會消除有線基礎架構，但由於Wi-Fi接入點需要使用以太網標準連接到有線設備，因此Wi-Fi允許企業和SOHO環境中的IT部門具有更大的可擴展性和訪問權限。</p>
@@ -72,4 +187,54 @@
 <p>Beginning with the 802.11n standard and subsequently moving to the current 802.11ac standard, manufacturers incorporated multiple antennae to achieve higher throughput. Known as multiple-input multiple-output (MIMO), both revisions accomplish the higher throughput by allowing operation at two different channel widths (20 and 40 MHz) within the same frequency and operate on both 2.4 GHz and 5.0 GHz frequency bands at the same time. Wireless N (802.11n) and wireless AC have a much larger bandwidth and maximum range, because they use MIMO and multiple frequency bands working in tandem to increase transmission and reception.</p>
 <p><br/>從802.11n標准開始，然後發展到當前的802.11ac標準，製造商採用了多個天線來實現更高的吞吐量。這兩種版本都稱為多輸入多輸出（MIMO），通過允許在同一頻率內在兩個不同的信道寬度（20和40 MHz）下運行，並在2.4 GHz和5.0 GHz頻段上同時運行，從而實現了更高的吞吐量。時間。無線N（802.11n）和無線AC具有更大的帶寬和最大範圍，因為它們使用MIMO和多個頻段協同工作來增加傳輸和接收。</p>
 <p>An important note is that wireless N, G, and B are all compatible because they all support the 2.4 GHz frequency, allowing for backward compatibility. If you use multiple standards, like B, G, and N devices at the same time on a singular wireless N wireless access point, the WAP will default back to wireless B standards to support each device, which will significantly slow down the network. Wireless N and wireless A are compatible because they both use the 5 GHz frequency band. However, wireless A is not compatible with wireless B or G devices.</p>
-<p>重要說明是，無線N，G和B都兼容，因為它們都支持2.4 GHz頻率，從而實現了向後兼容性。如果您在單個無線N無線接入點上同時使用多個標準，例如B，G和N設備，則WAP將默認恢復為無線B標準以支持每個設備，這將大大降低網絡速度。無線N和無線A兼容，因為它們都使用5 GHz頻帶。但是，無線A與無線B或G設備不兼容。</p>
+<p>重要說明是，無線N，G和B都兼容，因為它們都支持2.4 GHz頻率，從而實現了向後兼容性。如果您在單個無線N無線接入點上同時使用多個標準，例如B，G和N設備，則WAP將默認恢復為無線B標準以支持每個設備，這將大大降低網絡速度。無線N和無線A兼容，因為它們都使用5 GHz頻帶。但是，無線A與無線B或G設備不兼容。</p><br />Wireless Devices 無線設備 << <a href='Wireless Devices 無線設備.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
