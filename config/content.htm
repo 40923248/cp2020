@@ -113,7 +113,7 @@
 <h4><span>Overview 總覽</span></h4>
 <p><span>In this module, we will discuss the various types of Internet connectivity for networks. Essentially, this connectivity provides our link to the wide area network (WAN). Each type of connection has benefits and drawbacks, so it is important that you, as a technician, understand which WAN connectivity method you should use in a given scenario. Also, we will cover the basic methods of connecting a small office/home office (SOHO) network, to include wireless devices and connection to the Internet.</span></p>
 <p><span><span>在本模塊中，我們將討論網絡的各種類型的Internet連接。</span><span>本質上，這種連通性提供了我們到廣域網（WAN）的鏈接。</span><span>每種類型的連接都有其優點和缺點，因此，作為一名技術人員，了解在給定方案中應使用哪種WAN連接方法非常重要。</span><span>此外，我們還將介紹連接小型辦公室/家庭辦公室（SOHO）網絡的基本方法，包括無線設備和與Internet的連接。</span></span></p>
-<h4><span><span>Networking: Internet Connectivity</span></span></h4>
+<h3><span><span>Networking  Internet Connectivity  聯網 Internet連接</span></span></h3>
 <p>The oldest method of Internet connectivity is the dial-up network, usually abbreviated as DUN. Dial-up networking uses the public telephone lines using an analog audible signal over the line, which provides a maximum speed of 56 Kbps. The public switched telephone network (PSTN) is made up of multiple telephone carriers from around the world. Analog connections (voice and data) using the PSTN are called plain old telephone service (POTS) connections. To connect to the Internet using POTS, you needed both a modem and a dial-up Internet service provider (ISP) to answer your dial-up call.</p>
 <p><span>最早的Internet連接方法是撥號網絡，通常縮寫為DUN。</span><span>撥號網絡使用公用電話線，該公用電話線在線路上使用模擬聲音信號，最大速度為56 Kbps。</span><span>公共交換電話網（PSTN）由來自世界各地的多個電話運營商組成。</span><span>使用PSTN的模擬連接（語音和數據）稱為普通舊電話服務（POTS）連接。</span><span>要使用POTS連接到Internet，您需要調製解調器和撥號Internet服務提供商（ISP）來應答您的撥號電話。</span></p>
 <p>A modem is a device that converts 1s and 0s from their digital state into an audible state that is transferred over a standard telephone line. Modem stands for modulate/demodulate, which is the process of the digital data being converted to/from analog for transmission. Modems can reside in or be connected to computers in multiple ways, including:</p>
@@ -160,3 +160,30 @@
 <p>5G是正在開發中的標準，預計將在2020年代初發布。 該標準的前提是，Internet連接已成為一種需求，而非奢侈。 儘管蜂窩市場已經脫離了移動WiMAX，但該基礎設施仍在全球範圍內用於固定無線。 物聯網（IoT）是一個短語，用於描述21世紀現在正在發生的融合，屆時，任何功能強大的設備都將連接到Internet。 從智能家居及其子系統，到家用電器，再到具有Wi-Fi和GPS的汽車，用戶將從寬帶技術和“始終在線”的連接中受益。 光纖和Wi-Fi行業中的5G標準和其他主要舉措有望朝著這一目標邁進。 WiMAX論壇等組織和許多其他行業領導者正在大力投資，以將設備連接性整合到物聯網的保護之下。</p>
 <p>As we previously mentioned, both cable and xDSL networks benefit by incorporating fiber into the back end (known as the backhaul ), which increases the overall bandwidth available to the customer. Another major benefit of fiber is its resistance to electromagnetic interference.</p>
 <p>如前所述，電纜和xDSL網絡都受益於將光纖集成到後端（稱為回程）中，從而增加了可供客戶使用的整體帶寬。 纖維的另一個主要優點是它具有抗電磁干擾的能力。</p>
+<h3>Setting up a Network 建立網絡</h3>
+<p>The first and probably the most important step in deploying a wireless network is the planning phase. A site survey is the process of evaluating a network solution to deliver the required coverage, data rates, network capacity, roaming capacity, and quality of service.</p>
+<p>Factors that affect the number of access points needed in a building include:</p>
+<ul lang="">
+<li lang="">The size of the building.</li>
+<li lang="">The number and type of walls in the building and their composition.</li>
+<li lang="">The type of interference or obstructions between stations and the access point.</li>
+<li lang="">The presence of high-voltage equipment (microwaves, power transformers, air-conditioning/heating units, elevators, etc.).</li>
+<li lang="">Existing wired and wireless implementations.</li>
+<li lang="">Bandwidth requirements.</li>
+</ul>
+<p>To connect your device to the Internet, you need to have two things. First, you must have an Internet access device (or modem) such as we described in the previous section. This is really dependent on your requirements and the ISP choices where you are located. The Internet service provider (ISP) you choose will determine the type of modem you need and will supply the customer-premises equipment (CPE) for the outside of the building. Next, you must provide your network with a router, which serves as the interconnection point from your local area network clients (LAN) to the ISP external network (WAN).</p>
+<p>There are really only 11 steps to set up a small office, home office (SOHO) network:</p>
+<ol lang="">
+<li lang="">Decide on the type of Internet connection you will use. The ISP you choose will determine the type of modem you need and whether you buy or lease it. For a small office or home office, your most obvious choices will most likely be fiber, cable, or DSL, although a satellite, WiMAX, or cellular connection might be viable.</li>
+<li lang="">Determine how your workstations, often referred to as clients, will connect to the router. Will you use a wireless access point or wired Ethernet switch?</li>
+<li lang="">Choose the modem and router that will support your first two choices.</li>
+<li lang="">Set up the account with the ISP. They will come to your location to set up the CPE, including any wiring to the location where you determine the modem is to be placed. Whether you chose to lease or buy your own modem, the ISP usually offers a service to set up the connection between the modem and your LAN router. You also have the option of installing it yourself.</li>
+<li lang="">Cable the modem and router together.</li>
+<li lang="">Configure the router and wireless access point (if used).</li>
+<li lang="">Connect each client to the network (cabled or wireless) and verify they are working properly.</li>
+<li lang="">Configure each device to be part of the same workgroup or create a homegroup; this will allow you to configure each client to share resources like printers and file sharing.</li>
+<li lang="">Set up file and print sharing on each client designating which resources to share.</li>
+<li lang="">Test each client to verify they can reach the Internet.</li>
+<li lang="">Test the resources you shared in step 9 to make sure they are connected. If everything is working, you have an effective, Internet-connected workgroup that can share resources internally, as well.</li>
+</ol>
+<p>As you can see, step six asks you to configure a wireless router. Watch this video to see more explanation on how to configure a SOHO wireless router.</p>
