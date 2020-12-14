@@ -197,7 +197,7 @@
 <p style="text-align: center;"><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/vPlm2ETkgmc" width="560"></iframe></p>
 <h1>HW2</h1>
 <h1>HW3</h1>
-<h2>33 Birthday Dictionaries</h2>
+<h2>Birthday Dictionaries 生日字典</h2>
 <h3>Exercise 33  and Solution   練習33 和解決方案</h3>
 <p>This exercise is Part 1 of 4 of the birthday data exercise series. The other exercises are: Part 2, Part 3, and Part 4.</p>
 <p>此練習是生日數據練習系列4的第1部分。其他練習是：第2部分，第3部分和第4部分。</p>
@@ -387,12 +387,6 @@ Benjamin Franklin
         print('{}\'s birthday is {}.'.format(name, birthdays[name]))
     else:
         print('Sadly, we don\'t have {}\'s birthday.'.format(name))<br/><br/><span>And here is another reader submission: 這是另一位讀者的來稿：<br/></span></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <pre>import time
 Birthdays ={
     "Albert Einstein": "14/3/1889",
@@ -409,3 +403,101 @@ choice= input("\nWho's birthday do you want to look up?")
 if choice in Birthdays:
     print("The birthday of {} is: ".format(choice))
     print(Birthdays[choice])</pre>
+<pre><span> </span></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2>Tic Tac Toe Draw 井字遊戲抽獎</h2>
+<h3>Exercise 27 and Solution 練習27 和解決方案</h3>
+<p>This exercise is Part 3 of 4 of the Tic Tac Toe exercise series. The other exercises are: Part 1, Part 2, and Part 4.</p>
+<p>In a previous exercise we explored the idea of using a list of lists as a “data structure” to store information about a tic tac toe game. In a tic tac toe game, the “game server” needs to know where the Xs and Os are in the board, to know whether player 1 or player 2 (or whoever is X and O won).</p>
+<p>There has also been an exercise about drawing the actual tic tac toe gameboard using text characters.</p>
+<p>The next logical step is to deal with handling user input. When a player (say player 1, who is X) wants to place an X on the screen, they can’t just click on a terminal. So we are going to approximate this clicking simply by asking the user for a coordinate of where they want to place their piece.</p>
+<p>As a reminder, our tic tac toe game is really a list of lists. The game starts out with an empty game board like this:</p>
+<p>game = [[0, 0, 0],<br/> [0, 0, 0],<br/> [0, 0, 0]]<br/>The computer asks Player 1 (X) what their move is (in the format row,col), and say they type 1,3. Then the game would print out</p>
+<p>game = [[0, 0, X],<br/> [0, 0, 0],<br/> [0, 0, 0]]<br/>And ask Player 2 for their move, printing an O in that place.</p>
+<p>Things to note:</p>
+<p>For this exercise, assume that player 1 (the first player to move) will always be X and player 2 (the second player) will always be O.<br/>Notice how in the example I gave coordinates for where I want to move starting from (1, 1) instead of (0, 0). To people who don’t program, starting to count at 0 is a strange concept, so it is better for the user experience if the row counts and column counts start at 1. This is not required, but whichever way you choose to implement this, it should be explained to the player.<br/>Ask the user to enter coordinates in the form “row,col” - a number, then a comma, then a number. Then you can use your Python skills to figure out which row and column they want their piece to be in.<br/>Don’t worry about checking whether someone won the game, but if a player tries to put a piece in a game position where there already is another piece, do not allow the piece to go there.<br/>Bonus:</p>
+<p>For the “standard” exercise, don’t worry about “ending” the game - no need to keep track of how many squares are full. In a bonus version, keep track of how many squares are full and automatically stop asking for moves when there are no more valid moves.</p>
+<p>此練習是Tic Tac Toe練習系列4的第3部分。其他練習是：第1部分，第2部分和第4部分。</p>
+<p>在先前的練習中，我們探討了使用列表列表作為“數據結構”來存儲有關井字遊戲的信息的想法。在一個井字遊戲中，“遊戲服務器”需要知道其中XS和Os為中板，知道是否播放器1或播放器2（或誰是X和O韓元）。</p>
+<p>還進行了有關使用文本字符繪製實際井字遊戲板的練習。</p>
+<p>下一步的邏輯步驟是處理用戶輸入。當玩家（例如玩家1，即X）想要X在屏幕上放置一個時，他們不能僅單擊終端。因此，我們將簡單地通過詢問用戶要放置其作品的坐標來近似此點擊。</p>
+<p>提醒一下，我們的井字遊戲實際上是一個列表列表。遊戲從一個空的遊戲板開始，如下所示：</p>
+<p>game = [[0, 0, 0],<br/> [0, 0, 0],<br/> [0, 0, 0]]<br/>計算機問玩家1（X）他們的移動方向（格式為row,col），然後說出他們的輸入1,3。然後遊戲會打印出來</p>
+<p>game = [[0, 0, X],<br/> [0, 0, 0],<br/> [0, 0, 0]]<br/>並詢問玩家2的舉動，並O在該位置打印一個。</p>
+<p>注意事項：</p>
+<p>在本練習中，假設玩家1（第一位移動的玩家）將始終為，X而玩家2（第二位移動的玩家）將始終為O。<br/>請注意，在示例中，我如何給出要從（1，1）而不是（0，0）開始移動的坐標。對於不編程的人，從0開始計數是一個奇怪的概念，因此如果行計數和列計數從1開始，則對用戶體驗更好。這不是必需的，但是無論選擇哪種方式來實現，應該向玩家解釋。<br/>要求用戶以“ row，col”的形式輸入坐標-一個數字，然後是一個逗號，然後是一個數字。然後，您可以使用您的Python技能來確定他們希望自己的作品位於哪一行。<br/>不必擔心是否有人贏得了比賽，但是如果玩家試圖將一個棋子放置在已經有另一個棋子的遊戲位置中，則不要讓該棋子去那裡。<br/>獎金：</p>
+<p>對於“標準”練習，不必擔心“結束”遊戲-無需跟踪多少個正方形已滿。在獎勵版本中，跟踪多少個正方形已滿，並在沒有更多有效移動時自動停止要求移動。</p>
+<p></p>
+<h3>Concepts 概念</h3>
+<p>One review concept that is definitely needed (in addition to the user input that is the core of the exercise) is the need to “split” strings.</p>
+<p>The user will input coordinates in the form “row,col”, which input() will then read in as a string. But we really want the numbers that come out of that string, to know which row and column to place the piece at.</p>
+<p>One approach is to use the idea of strings as lists to extract the row and column numbers. This works great if your row and column numbers are always single digits - the row will always be at index 0 and the column will always be at index 2. But this breaks when the numbers are larger than one digit (I know, not going to happen in tic tac toe, but it’s easy to image extending this to other games).</p>
+<p>Instead, there are two string manipulation functions that will help you:</p>
+<p>.split() - Takes a string and returns a list, using the separator as the split criteria. So if you have a string name = "John Doe" and do name_list = name.split(" "), name_list will be ["John", "Doe"]. You can use any separator / split character you want. Just remember, that each of the elements returned back will be a string as well.<br/>.strip() - Takes a string and removes the whitespace on the left and right sides of it. So you have a string name = " Michele ", and you do name = name.strip(), and now name will just be "Michele" - nice and clean.<br/>I challenge you to figure out how to use them in the exercise!</p>
+<p>（除了作為練習核心的用戶輸入之外）肯定需要的一種審核概念是需要“拆分”字符串。</p>
+<p>用戶將以“ row，col”形式輸入坐標，然後input()將其作為字符串讀取。但是我們確實希望從該字符串中得出的數字知道將片段放置在哪一行和哪一列。</p>
+<p>一種方法是使用字符串作為列表的概念來提取行號和列號。如果行號和列號始終是一位數字，則該方法非常有用-行將始終在索引0處，列始終在索引2。但是，當數字大於一位時，這種方法會中斷（我知道，會在井字遊戲中發生，但很容易將其擴展到其他遊戲。</p>
+<p>相反，有兩個字符串操作函數可以為您提供幫助：</p>
+<p>.split()-使用分隔符作為分割條件，獲取一個字符串並返回一個列表。因此，如果您有琴弦name = "John Doe"做name_list = name.split(" ")，name_list將是["John", "Doe"]。您可以使用所需的任何分隔符/拆分字符。請記住，返回的每個元素也將是一個字符串。<br/>.strip()-取一個字符串並刪除其左側和右側的空格。這樣，您就有了一個字符串name = " Michele "，並且執行了name = name.strip()，現在name就變得"Michele"很乾淨了。<br/>我挑戰您找出如何在練習中使用它們！</p>
+<h2>Birthday Plots 生日情節</h2><h3>Exercise 36 and Solution 練習36和解決方案</h3>
+<p>This exercise is Part 4 of 4 of the birthday data exercise series. The other exercises are: Part 1, Part 2, and Part 3.</p>
+<p>In the previous exercise we counted how many birthdays there are in each month in our dictionary of birthdays.</p>
+<p>In this exercise, use the bokeh Python library to plot a histogram of which months the scientists have birthdays in! Because it would take a long time for you to input the months of various scientists, you can use my scientist birthday JSON file. Just parse out the months (if you don’t know how, I suggest looking at the previous exercise or its solution) and draw your histogram.</p>
+<p>If you are using a purely web-based interface for coding, this exercise won’t work for you, since it requires installing the bokeh Python package. Now might be a good time to install Python on your own computer.</p>
+<p>此練習是生日數據練習系列4的第4部分。其他練習是：第1部分，第2部分和第3部分。</p>
+<p>在上一個練習中，我們在生日詞典中計算了每個月有多少個生日。</p>
+<p>在本練習中，使用bokeh Python庫繪製科學家在哪幾個月生日的直方圖！由於輸入多個科學家的時間會花費很長時間，因此可以使用我的科學家生日JSON文件。只需解析幾個月（如果您不知道如何做，我建議您查看上一個練習或其解決方案）並繪製直方圖。</p>
+<p>如果您使用的是純粹基於網絡的界面進行編碼，則此練習對您不起作用，因為它需要安裝bokeh Python軟件包。現在可能是在自己的計算機上安裝Python的好時機。</p><h3>Discussion 討論區</h3>
+<p>Today’s topic is going to be about the bokeh plotting library. We create plots and charts to display and communicate information from data, and it would be great to do that directly from Python. Sometimes it is really nice to write code or algorithms from scratch to learn and practice, and sometimes, someone has already written the code so well that you should use theirs. Bokeh is one of these libraries - it is library specifically with functions for making plots, charts, and graphs. It is based on the famous D3.js library originally developed at the New York Times for their visualizations, which has been used for many years to programmatically create visually appealing data visualizations.</p>
+<p>今天的主題將是關於散景圖庫。我們創建繪圖和圖表以顯示和傳達數據中的信息，直接從Python中進行操作非常好。有時候從頭開始編寫代碼或算法來學習和實踐真的很棒，有時，有人已經寫好了代碼，應該使用他們的代碼。 Bokeh是這些庫之一-它是專門具有繪製圖表，圖表和圖形的函數的庫。它基於最初在《紐約時報》上開發的用於可視化的著名D3.js庫，該庫已被用於以編程方式創建具有視覺吸引力的數據可視化。</p><h3>When to make plots 什麼時候作圖</h3>
+<p>We use plots to convey information. From this histogram:</p>
+<p>我們使用圖來傳達信息。根據此直方圖：</p>
+<p style="text-align: center;"><img alt="US Government spending histogram" height="245" src="https://www.practicepython.org/assets/imgs/united-states-government-spending.png" width="526"/></p>
+<p>You can immediately see that the US government spending has been steadily increasing, reaching a peak in January 2017.</p>
+<p>So learning how to make plots will help you become better at displaying and communicating information, both to yourself and to others.</p>
+<p>美國政府支出直方圖</p>
+<p>您可以立即看到，美國政府支出一直在穩定增長，在2017年1月達到峰值。</p>
+<p>因此，學習如何繪製情節將有助於您更好地顯示和與自己以及他人交流信息。</p><h3>Plotting libraries in Python 用Python繪製庫</h3>
+<p>If you are looking for a plotting library in Python, you have two main options: matplotlib and bokeh. Today I want to discuss bokeh, because I think it will become more popular in years to come.</p>
+<p>Many Python developers (and especially data scientists and researchers) will tell you that the most commonly used plotting library in Python is matplotlib. I myself was a matplotlib user for many years - the integrations with Python data libraries are great, and migrating from the MATLAB plotting environment to matplotlib is easy. But a friend introduced me to bokeh and I was hooked ever since. Because it is based on D3.js, the visualizations look smooth and professional.</p>
+<p>There is no one “best” plotting library - you should use whichever one feels and looks better for you. But for the rest of this post, I’ll talk about how to use bokeh to make a basic plot.</p>
+<p>如果要在Python中尋找繪圖庫，則有兩個主要選項：matplotlib和bokeh。今天，我想討論散景，因為我認為它會在未來幾年變得越來越流行。</p>
+<p>許多Python開發人員（尤其是數據科學家和研究人員）會告訴您，Python中最常用的繪圖庫是matplotlib。我本人是matplotlib用戶多年，與Python數據庫的集成非常好，並且從MATLAB繪圖環境遷移到matplotlib很容易。但是一個朋友向我介紹了散景，從那時起我就迷上了。由於它基於D3.js，因此可視化效果看起來既流暢又專業。</p>
+<p>沒有一個“最佳”繪圖庫-您應該使用對您而言感覺更好的一種。但是，在本文的其餘部分中，我將討論如何使用bokeh進行基本繪圖。</p><h3>Installing bokeh 安裝背景虛化</h3>
+<p>To use bokeh, we first have to install it. Unlike something like json or Counter from previous exercises, bokeh does not come installed with Python.</p>
+<p>If you are using the Anaconda Python distribution (which you should, if you are on Windows!) then you can install bokeh by typing</p>
+<p>conda install bokeh<br/>in the Windows command prompt or the bash shell.</p>
+<p>On OSX or GNU / Linux, just type</p>
+<p>pip3 install bokeh<br/>(If you have are using Python 2, you should do pip install bokeh.)</p>
+<p>要使用bokeh，我們首先必須安裝它。與以前的練習中的json或Counter之類的東西不同，Python不附帶bokeh。</p>
+<p>如果使用的是Anaconda Python發行版（如果在Windows上，則應使用該發行版），然後可以通過鍵入來安裝bokeh</p>
+<p>康達安裝散景<br/>在Windows命令提示符或bash shell中。</p>
+<p>在OSX或GNU / Linux上，只需鍵入</p>
+<p>pip3安裝散景<br/>（如果您使用的是Python 2，則應執行pip install bokeh。）</p><h3>Using bokeh 使用散景</h3>
+<p>The basic idea of any plotting package is simple:</p>
+<p>Load the data<br/>Display the data<br/>So the first thing you have to do is prepare some data. Usually, when you are plotting data you have two axes, or groups of data, an x-axis (or horizontal axis) and a y-axis (or vertical axis). The x variable is your input (independent) variable and the y variable is your output (dependent) variable.</p>
+<p>For use in bokeh, your data should be loaded into two separate lists, one for the x-axis and one for the y-axis. The basic format of a bokeh (in this case histogram) looks like this:</p>
+<p># need to import at least 3 things to make your<br/># bokeh plots work<br/>from bokeh.plotting import figure, show, output_file</p>
+<p># we specify an HTML file where the output will go<br/>output_file("plot.html")</p>
+<p># load our x and y data<br/>x = [10, 20, 30]<br/>y = [4, 5, 6]</p>
+<p># create a figure<br/>p = figure()</p>
+<p># create a histogram<br/>p.vbar(x=x, top=y, width=0.5)</p>
+<p># render (show) the plot<br/>show(p)<br/>The way bokeh outputs plots is really cool: when you run a piece of bokeh code, it outputs the result into an HTML file that you can then save and display in a web browser on it’s own. After you run this segment on top, it will automatically open a web browser and show you a plot.</p>
+<p>One awesome feature of Bokeh is that it gives you a toolbar you can use to play with the graph - moving it around, zooming out, saving it, etc. Plus, you can put it directly into am HTML page!</p>
+<p>It will look something like this:</p>
+<p>任何繪圖程序包的基本思想都很簡單：</p>
+<p>加載數據<br/>顯示數據<br/>因此，您要做的第一件事是準備一些數據。通常，在繪製數據時，您有兩個軸或一組數據，分別是x軸（或水平軸）和y軸（或垂直軸）。 x變量是您的輸入（獨立）變量，y變量是您的輸出（獨立）變量。</p>
+<p>為了在bokeh中使用，您的數據應加載到兩個單獨的列表中，一個用於x軸，一個用於y軸。散景的基本格式（在本例中為直方圖）如下所示：</p>
+<p>＃需要至少導入3件事才能使您的<br/>＃散景圖工作<br/>來自bokeh.plotting導入圖，顯示，output_file</p>
+<p>＃我們指定一個HTML文件，輸出將在其中<br/>output_file（“ plot.html”）</p>
+<p>＃加載我們的x和y數據<br/>x = [10，20，30]<br/>y = [4，5，6]</p>
+<p>＃創建一個人物<br/>p =數字（）</p>
+<p>＃創建直方圖<br/>p.vbar（x = x，top = y，寬度= 0.5）</p>
+<p>＃渲染（顯示）情節<br/>顯示（p）<br/>散景輸出圖的方式真的很酷：運行一段散景代碼時，它將結果輸出到HTML文件中，然後您可以將其保存並單獨顯示在網絡瀏覽器中。在頂部運行此段後，它將自動打開Web瀏覽器並顯示圖。</p>
+<p>Bokeh的一項令人敬畏的功能是，它為您提供了一個可用於處理圖形的工具欄-進行移動，縮放，保存等。此外，您可以將其直接放入HTML頁面！</p>
+<p>它看起來像這樣：</p>

@@ -133,21 +133,18 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">String formatting 字符串格式 << <a href='String formatting 字符串格式.html'>Previous</a> <a href='Sample solution 樣品溶液.html'>Next</a> >> Sample solution 樣品溶液<br /><h1>Solutions 解決方案</h1>
-<p><em>This exercise is Part 1 of 4 of the birthday data exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>,<span> </span><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html">Part 3</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></p>
-<p>For this exercise, we will keep track of when our friend’s birthdays are, and be able to find that information based on their name. Create a dictionary (in your file) of names and birthdays. When you run your program it should ask the user to enter a name, and return the birthday of that person back to them. The interaction should look something like this:</p>
-<p><em><span>此練習是生日數據練習系列4的第1部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html"><span>第3</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
-<p><span><span>在本練習中，我們將跟踪朋友的生日，並能夠根據他們的姓名查找該信息。</span><span>在您的文件中創建一個名稱和生日字典。</span><span>當您運行程序時，應要求用戶輸入名稱，並將該人的生日返回給他們。</span><span>交互應如下所示：</span></span></p>
-<figure class="highlight">
-<pre><code class="language-pycon" data-lang="pycon">&gt;&gt;&gt; Welcome to the birthday dictionary. We know the birthdays of:
-Albert Einstein
-Benjamin Franklin
-Ada Lovelace
-&gt;&gt;&gt; Who's birthday do you want to look up?
-Benjamin Franklin
-&gt;&gt;&gt; Benjamin Franklin's birthday is 01/17/1706.</code></pre>
-</figure>
-<br />String formatting 字符串格式 << <a href='String formatting 字符串格式.html'>Previous</a> <a href='Sample solution 樣品溶液.html'>Next</a> >> Sample solution 樣品溶液</div>
+    <div id="tipue_search_content">Exercise 27 and Solution 練習27 和解決方案 << <a href='Exercise 27 and Solution 練習27 和解決方案.html'>Previous</a> <a href='Birthday Plots 生日情節.html'>Next</a> >> Birthday Plots 生日情節<br /><h1>Concepts 概念</h1>
+<p>One review concept that is definitely needed (in addition to the user input that is the core of the exercise) is the need to “split” strings.</p>
+<p>The user will input coordinates in the form “row,col”, which input() will then read in as a string. But we really want the numbers that come out of that string, to know which row and column to place the piece at.</p>
+<p>One approach is to use the idea of strings as lists to extract the row and column numbers. This works great if your row and column numbers are always single digits - the row will always be at index 0 and the column will always be at index 2. But this breaks when the numbers are larger than one digit (I know, not going to happen in tic tac toe, but it’s easy to image extending this to other games).</p>
+<p>Instead, there are two string manipulation functions that will help you:</p>
+<p>.split() - Takes a string and returns a list, using the separator as the split criteria. So if you have a string name = "John Doe" and do name_list = name.split(" "), name_list will be ["John", "Doe"]. You can use any separator / split character you want. Just remember, that each of the elements returned back will be a string as well.<br/>.strip() - Takes a string and removes the whitespace on the left and right sides of it. So you have a string name = " Michele ", and you do name = name.strip(), and now name will just be "Michele" - nice and clean.<br/>I challenge you to figure out how to use them in the exercise!</p>
+<p>（除了作為練習核心的用戶輸入之外）肯定需要的一種審核概念是需要“拆分”字符串。</p>
+<p>用戶將以“ row，col”形式輸入坐標，然後input()將其作為字符串讀取。但是我們確實希望從該字符串中得出的數字知道將片段放置在哪一行和哪一列。</p>
+<p>一種方法是使用字符串作為列表的概念來提取行號和列號。如果行號和列號始終是一位數字，則該方法非常有用-行將始終在索引0處，列始終在索引2。但是，當數字大於一位時，這種方法會中斷（我知道，會在井字遊戲中發生，但很容易將其擴展到其他遊戲。</p>
+<p>相反，有兩個字符串操作函數可以為您提供幫助：</p>
+<p>.split()-使用分隔符作為分割條件，獲取一個字符串並返回一個列表。因此，如果您有琴弦name = "John Doe"做name_list = name.split(" ")，name_list將是["John", "Doe"]。您可以使用所需的任何分隔符/拆分字符。請記住，返回的每個元素也將是一個字符串。<br/>.strip()-取一個字符串並刪除其左側和右側的空格。這樣，您就有了一個字符串name = " Michele "，並且執行了name = name.strip()，現在name就變得"Michele"很乾淨了。<br/>我挑戰您找出如何在練習中使用它們！</p>
+<br />Exercise 27 and Solution 練習27 和解決方案 << <a href='Exercise 27 and Solution 練習27 和解決方案.html'>Previous</a> <a href='Birthday Plots 生日情節.html'>Next</a> >> Birthday Plots 生日情節</div>
         
     <!-- footer -->
       <div class="container">
