@@ -30,7 +30,7 @@
 <p>802.11標準最初是在1997年批准的，並且與802.11a和802.11b修訂版兼容的設備在2000年之後很快就可以商業化使用。儘管吞吐量更高，但是802.11a設備不如802.11b設備那樣容易採用。當Wi-Fi能夠以11 Mbps的最大吞吐量部署802.11b時，在大多數公司和SOHO環境中，有線網絡的最低速度為100 Mbps。較低的吞吐量使用戶更依賴於傳統台式機，並且不太可能無線使用其具有無線功能的新型筆記本電腦。一旦802.11g在市場上充分飽和，其54 Mbps速度與100 Mbps有線網絡速度之間的差異就變得不那麼明顯，消費者對無線變得越來越感興趣。業界一直在尋求方法來設計更高吞吐量的設備，並將硬件整合到移動設備中，例如手機，平板電腦和更輕便的筆記本電腦。</p>
 <p>Wireless LANs use two primary frequency bands: 2.4 GHz and 5 GHz. The 2.4 GHz range actually encompasses 2.4 to 2.5 GHz frequencies, while the 5 GHz range is 5.75 GHz to 5.875 GHz. Each frequency band has specific channels (or small portions of frequency) at which the devices operate to avoid overlapping with other wireless LAN devices. For 2.4 GHz frequency bands, it is important to choose channels 1, 6, and 11 to avoid overlapping frequencies. This is because overlapping can cause interference in your networks and cause data transmission and receiving issues for the devices.</p>
 <p>無線局域網使用兩個主要頻段：2.4 GHz和5 GHz。 2.4 GHz範圍實際上包含2.4至2.5 GHz頻率，而5 GHz範圍是5.75 GHz至5.875 GHz。每個頻帶具有設備在其上操作的特定信道（或頻率的一小部分），以避免與其他無線LAN設備重疊。對於2.4 GHz頻帶，重要的是選擇信道1、6和11，以避免頻率重疊。這是因為重疊會導致網絡干擾，並導致設備的數據傳輸和接收問題。</p>
-<h4>Speed, Range, and Frequencies 速度，範圍和頻率</h4>
+<h4>Speed Range and Frequencies 速度 範圍和頻率</h4>
 <p><span>Bandwidth speed has been greatly improved through the revisions after 802.11b, as shown in the table below. When discussing data flow and speed, the two terms referred to are bandwidth and throughput. Though they are often used interchangeably, the two terms are different and need to be understood. Simply put, bandwidth is the theoretical maximum of the given standard, whereas throughput is the actual potential in a real-world scenario. Many factors affect actual throughput, such as frequency, channel overlap, and broadcast streams.</span></p>
 <p><span>如下表所示，通過802.11b的修訂，帶寬速度得到了極大的提高。 在討論數據流和速度時，所指的兩個術語是帶寬和吞吐量。 儘管它們經常互換使用，但這兩個術語是不同的，需要理解。 簡而言之，帶寬是給定標準的理論最大值，而吞吐量是實際情況下的實際潛力。 許多因素會影響實際吞吐量，例如頻率，頻道重疊和廣播流。</span></p>
 <table align="center" cellspacing="0" class="wbtable" height="192" lang="" width="397">
@@ -80,7 +80,7 @@
 <h4><span><span>Encryption Types 加密類型</span></span></h4>
 <p><span><span>In order to provide security for wireless networks, the 802.11 standards provide for three major types of password protection/encryption: wired equivalent privacy (WEP), Wi-Fi protected access (WPA), and Wi-Fi protected access 2 (WPA2).</span></span></p>
 <p><span><span>為了提供無線網絡的安全性，802.11標準提供了三種主要的密碼保護/加密類型：有線等效保密（WEP），Wi-Fi保護訪問（WPA）和Wi-Fi保護訪問2（WPA2）。</span></span></p>
-<h4><span><span>Wired Equivalent Privacy (WEP) 有線等效保密（WEP）</span></span></h4>
+<h4><span><span>Wired Equivalent Privacy WEP 有線等效保密 WEP</span></span></h4>
 <div class="section" id="N1069F">
 <p class="sectionContain">In the original 802.11 standard, the only security provided was WEP, which claims to be as secure as a wired network connection. This wireless connection was secured using encryption with a 40-bit WEP key that all access points and client devices would use (preshared key). This symmetric encryption was a good idea, but since the key was so small (40 bits), it was quickly broken by attackers.To solve this, WEP evolved into using a 64-bit key and could support keys up to 128 bits, which would provide strong encryption. Unfortunately, the WEP algorithm used for encryption also relied on using an initialization vector (IV) in combination with the preshared key to create the strong encryption, but the IV was only created at 24 bits and is sent in plain text or clear text during the preshared key exchange. This was quickly compromised by attackers using a brute-force attack to determine the password using the weak IV. Many utilities exist in the open-source realm that can crack WEP passwords within just a few minutes on modern hardware. For this reason, WEP is considered insecure today and should never be used in your networks.</p>
 <div class="sectionContain">
@@ -88,17 +88,17 @@
 <p id="N106A9" lang=""><span><span>為了解決這個問題，WEP演變為使用64位密鑰，並且可以支持高達128位的密鑰，從而可以提供強大的加密功能。</span><span>不幸的是，用於加密的WEP算法還依賴於使用初始化向量（IV）結合預共享密鑰來創建強加密，但是IV僅以24位創建，並且在加密期間以純文本或明文發送。預共享密鑰交換。</span><span>攻擊者使用強力攻擊使用弱IV來確定密碼，從而很快破壞了這一安全性。</span><span>開源領域中存在許多實用程序，可以在短短幾分鐘內在現代硬件上破解WEP密碼。</span><span>因此，WEP在今天被認為是不安全的，永遠不要在您的網絡中使用。</span></span></p>
 </div>
 </div>
-<h4 class="sectionContain">Wi-Fi Protected Access (WPA) Wi-Fi保護訪問（WPA）</h4>
+<h4 class="sectionContain">Wi-Fi Protected Access  WPA  Wi-Fi保護訪問 WPA</h4>
 <p class="section" id="N106AE">The WPA standard was introduced to replace the insecure WEP. WPA used a 48-bit IV in place of WEP’s 24-bit IV. This upgraded IV uses a temporal key integrity protocol (TKIP). TKIP is an IEEE standard that was designed to provide more secure encryption. TKIP is a suite of algorithms that allows WLAN equipment to upgrade to TKIP without replacing hardware. TKIP encrypts each data packet with a unique encryption key, and the keys are much stronger than WEP. To increase key strength, TKIP includes four additional algorithms. In addition to TKIP, the WPA standard uses message integrity check (MIC) to confirm that data was not modified in transit. MIC uses a “hash” to verify that a message has not been altered. WPA supported both preshared key mode and enterprise mode. In enterprise mode, users are required to authenticate before exchanging their keys and each key between the client and access point is only temporary, reducing the chance of compromise. Unfortunately, WPA also suffered security flaws centered on the use of passphrases and pre-shared key (PSK) management and is now also considered to be unsecure.</p>
 <p class="section">引入了WPA標準來代替不安全的WEP。WPA使用48位IV代替WEP的24位IV。此升級的IV使用臨時密鑰完整性協議（TKIP）。TKIP是旨在提供更安全的加密的IEEE標準。TKIP是一套算法，可以使WLAN設備升級到TKIP，而無需更換硬件。TKIP使用唯一的加密密鑰加密每個數據包，並且該密鑰比WEP強得多。為了增強按鍵強度，TKIP包括四個附加算法。除了TKIP，WPA標準還使用消息完整性檢查（MIC）來確認數據在傳輸過程中沒有被修改。MIC使用“哈希”來驗證消息是否未被更改。WPA支持預共享密鑰模式和企業模式。在企業模式下，要求用戶在交換密鑰之前進行身份驗證，並且客戶端和訪問點之間的每個密鑰只是臨時的，從而減少了洩露的機會。不幸的是，WPA還遭受了圍繞密碼短語和預共享密鑰（PSK）管理的安全缺陷，現在也被認為是不安全的。</p>
-<h4 class="sectionContain">Wi-Fi Protected Access 2 (WPA2) Wi-Fi保護訪問2（WPA2）</h4>
+<h4 class="sectionContain">Wi-Fi Protected Access 2  WPA2  Wi-Fi保護訪問2 WPA2</h4>
 <p class="section"><span>Wi-Fi protected access version 2 (WPA2) was implemented to replace both WEP and WPA because of the insecurities with the 24-bit and 48-bit initialization vectors. WPA2 requires stronger encryption and integrity checking, using counter mode (CCMP) with cipher block chaining message authentication code protocol for integrity checking. Additionally, the encryption used for WPA2 is the advanced encryption standard (AES) with a 128-bit key, the same algorithm used by the United States government to protect their classified networks. Using WPA2 creates a secure wireless network, but only when used with good passwords and shared keys. WPA2 also supports enterprise mode for centralized user authentication (used in corporate networks) and a personal mode for preshared key support (used in most homes and small offices). The key to security with WPA2 is a strong password, since the current method of breaking into a WPA2 network is to use brute force attacks against the preshared key. If your key is long and complex, the attackers will not be able to penetrate your WPA2 wireless networks.</span></p>
 <div class="section"><span><span>由於24位和48位初始化向量的不安全性，實施了Wi-Fi保護訪問版本2（WPA2）來替代WEP和WPA。</span><span>WPA2需要使用計數器模式（CCMP）和密碼塊鏈接消息身份驗證代碼協議進行更強的加密和完整性檢查，以進行完整性檢查。</span><span>此外，用於WPA2的加密是具有128位密鑰的高級加密標準（AES），與美國政府用來保護其機密網絡的算法相同。</span><span>使用WPA2可以創建安全的無線網絡，但前提是要使用良好的密碼和共享密鑰。</span><span>WPA2還支持用於集中式用戶身份驗證的企業模式（用於公司網絡）和用於預共享密鑰支持的個人模式（用於大多數家庭和小型辦公室）。</span><span>使用WPA2進行安全保護的密鑰是一個強密碼，因為當前闖入WPA2網絡的方法是對預共享密鑰使用暴力攻擊。</span><span>如果密鑰又長又復雜，攻擊者將無法穿透您的WPA2無線網絡。</span></span>
 <h4 class="sectionContain"><span>Wi-Fi Protected Access 2 Enterprise Wi-Fi保護訪問2企業</span></h4>
 <span>WPA2 enterprise is a client/server model using the remote authentication dial-in user service (RADIUS) protocol found in larger corporate networks. The RADIUS server runs in the application layer using UDP (user datagram protocol) as a transport method, and is usually a software background service running on a UNIX or Windows server. WPA2 enterprise eliminates a shared key and replaces it with a username and a password to connect to the corporate Wi-Fi network.</span></div>
 <div class="section"><span><span></span></span></div>
 <div class="section"><span><span>WPA2企業版是使用大型企業網絡中使用的遠程身份驗證撥入用戶服務（RADIUS）協議的客戶端/服務器模型。</span><span>RADIUS服務器使用UDP（用戶數據報協議）作為傳輸方法在應用程序層中運行，通常是在UNIX或Windows服務器上運行的軟件後台服務。</span><span>WPA2企業消除了共享密鑰，並用用戶名和密碼代替了共享密鑰以連接到公司的Wi-Fi網絡。</span></span></div>
-<h3 class="section"><span><span>Wireless Networking Types 無線網絡類型</span></span></h3>
+<h3>Wireless Networking Types 無線網絡類型</h3>
 <div class="section">In addition to Wi-Fi networks, there are other wireless options that exist, such as Bluetooth and infrared. These types of technologies are usually used for Personal Area Networks (PANs) in order to connect (or pair) two devices in an ad hoc manner.</div>
 <div class="section"><span></span></div>
 <div class="section"><span>除了Wi-Fi網絡外，還存在其他無線選項，例如藍牙和紅外線。</span><span>這些類型的技術通常用於個人區域網（PAN），以便以臨時方式連接（或配對）兩個設備。</span></div>
@@ -110,12 +110,12 @@
 <div class="section">Infrared existed before Bluetooth and was a short-range, low-speed, line-of-sight communication path. It was heavily used to connect personal digital assistants (PDAs) and wireless mice and keyboards. Not common in contemporary computers, it was replaced almost entirely by Bluetooth, but some machines keep an integrated infrared sensor for backward compatibility. If you have a need for infrared, but it isn’t included on your machine, you can add an infrared sensor through a USB adapter.</div>
 <div class="section"></div>
 <div class="section"><span>紅外技術早於藍牙技術就已存在，它是一種短距離，低速，視線通信的路徑。</span><span>它被大量用於連接個人數字助理（PDA）和無線鼠標和鍵盤。</span><span>在當代計算機中並不常見，它幾乎已完全被藍牙取代，但某些機器保留了集成的紅外傳感器以實現向後兼容性。</span><span>如果您需要紅外線，但您的機器中沒有紅外線，則可以通過USB適配器添加紅外線傳感器。</span></div>
-<h2 class="section"><span>PCH 16  Internet Connectivity 互聯網連接</span></h2>
-<h3><span>Internet Connectivity 互聯網連接</span></h3>
+<h2>PCH 16  Internet Connectivity 互聯網連接</h2>
+<h3>Internet Connectivity 互聯網連接</h3>
 <h4><span>Overview 總覽</span></h4>
 <p><span>In this module, we will discuss the various types of Internet connectivity for networks. Essentially, this connectivity provides our link to the wide area network (WAN). Each type of connection has benefits and drawbacks, so it is important that you, as a technician, understand which WAN connectivity method you should use in a given scenario. Also, we will cover the basic methods of connecting a small office/home office (SOHO) network, to include wireless devices and connection to the Internet.</span></p>
 <p><span><span>在本模塊中，我們將討論網絡的各種類型的Internet連接。</span><span>本質上，這種連通性提供了我們到廣域網（WAN）的鏈接。</span><span>每種類型的連接都有其優點和缺點，因此，作為一名技術人員，了解在給定方案中應使用哪種WAN連接方法非常重要。</span><span>此外，我們還將介紹連接小型辦公室/家庭辦公室（SOHO）網絡的基本方法，包括無線設備和與Internet的連接。</span></span></p>
-<h3><span><span>Networking  Internet Connectivity  聯網 Internet連接</span></span></h3>
+<h3>Networking  Internet Connectivity  聯網 Internet連接</h3>
 <p>The oldest method of Internet connectivity is the dial-up network, usually abbreviated as DUN. Dial-up networking uses the public telephone lines using an analog audible signal over the line, which provides a maximum speed of 56 Kbps. The public switched telephone network (PSTN) is made up of multiple telephone carriers from around the world. Analog connections (voice and data) using the PSTN are called plain old telephone service (POTS) connections. To connect to the Internet using POTS, you needed both a modem and a dial-up Internet service provider (ISP) to answer your dial-up call.</p>
 <p><span>最早的Internet連接方法是撥號網絡，通常縮寫為DUN。</span><span>撥號網絡使用公用電話線，該公用電話線在線路上使用模擬聲音信號，最大速度為56 Kbps。</span><span>公共交換電話網（PSTN）由來自世界各地的多個電話運營商組成。</span><span>使用PSTN的模擬連接（語音和數據）稱為普通舊電話服務（POTS）連接。</span><span>要使用POTS連接到Internet，您需要調製解調器和撥號Internet服務提供商（ISP）來應答您的撥號電話。</span></p>
 <p>A modem is a device that converts 1s and 0s from their digital state into an audible state that is transferred over a standard telephone line. Modem stands for modulate/demodulate, which is the process of the digital data being converted to/from analog for transmission. Modems can reside in or be connected to computers in multiple ways, including:</p>
@@ -195,5 +195,217 @@
 <p>As you can see, step six asks you to configure a wireless router. Watch this video to see more explanation on how to configure a SOHO wireless router.</p>
 <p>如您所見，第六步要求您配置無線路由器。 觀看此視頻，以了解有關如何配置SOHO無線路由器的更多說明。</p>
 <p style="text-align: center;"><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/vPlm2ETkgmc" width="560"></iframe></p>
-<h1 style="text-align: left;">HW2</h1>
+<h1>HW2</h1>
 <h1>HW3</h1>
+<h2>33 Birthday Dictionaries</h2>
+<h3>Exercise 33  and Solution   練習33 和解決方案</h3>
+<p>This exercise is Part 1 of 4 of the birthday data exercise series. The other exercises are: Part 2, Part 3, and Part 4.</p>
+<p>此練習是生日數據練習系列4的第1部分。其他練習是：第2部分，第3部分和第4部分。</p>
+<p>在本練習中，我們將跟踪朋友的生日，並能夠根據他們的姓名查找該信息。在您的文件中創建一個名稱和生日字典。當您運行程序時，應要求用戶輸入名稱，並將該人的生日返回給他們。交互應如下所示：</p>
+<p>For this exercise, we will keep track of when our friend’s birthdays are, and be able to find that information based on their name. Create a dictionary (in your file) of names and birthdays. When you run your program it should ask the user to enter a name, and return the birthday of that person back to them. The interaction should look something like this:</p>
+<p>&gt;&gt;&gt; Welcome to the birthday dictionary. We know the birthdays of:<br/>Albert Einstein<br/>Benjamin Franklin<br/>Ada Lovelace<br/>&gt;&gt;&gt; Who's birthday do you want to look up?<br/>Benjamin Franklin<br/>&gt;&gt;&gt; Benjamin Franklin's birthday is 01/17/1706.<br/>Happy coding! 祝您編碼愉快！</p>
+<h3>Discussion topics 討論主題</h3>
+<ol>
+<li>Dictionaries <span><span>辭典</span></span></li>
+<li>String formatting, briefly <span><span>字符串格式化，簡要</span></span></li>
+</ol>
+<h3>Dictionaries 辭典</h3>
+<p><span>We covered dictionaries in </span><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html">a previous exercise</a><span>, but it’s been long enough that we will review them here and add a few more notes.</span></p>
+<p><span>我們在<a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html"><span><span>上一練習中</span></span></a><span><span>介紹了字典</span><span>，但是已經足夠長了，我們將在這裡對其進行回顧並添加更多註釋。</span></span></span></p>
+<h3>QUICK REVIEW 快速復審</h3>
+<p>The main topic for this week is the concept of a<span> </span><em>dictionary</em>. In Python they are called dictionaries, but in other languages they may be called<span> </span><em>maps</em><span> </span>or<span> </span><em>hashmaps</em>. The concept is the same: it is a way to use a<span> </span><em>key</em><span> </span>to access some<span> </span><em>value</em>. It is mapping one set of data (the keys) to another set of data (the values). The only way to access the<span> </span><em>value</em><span> </span>part of the dictionary is to use the<span> </span><em>key</em>.</p>
+<p>As an example, grocery store systems can store the prices for various items by using a dictionary. In Python, it would look something like this:</p>
+<p><span>本週的主題是</span><em><span>字典</span></em><span>的概念。在Python中，它們稱為字典，在其他語言中，它們可以稱為</span><em><span>map</span></em><span>或</span><em><span>hashmaps</span></em><span>。概念是相同的：這是一種使用</span><em><span>鍵</span></em><span>來獲取某些</span><em><span>值的方法</span></em><span>。它正在將一組數據（鍵）映射到另一組數據（值）。訪問字典的</span><em><span>值</span></em><span>部分的唯一方法是使用</span><em><span>鍵</span></em><span>。</span></p>
+<p><span><span>例如，雜貨店系統可以使用字典來存儲各種商品的價格。</span><span>在Python中，它看起來像這樣：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">price_dictionary</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s">"banana"</span><span class="p">:</span> <span class="mf">1.50</span><span class="p">,</span>
+	<span class="s">"avocado"</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span>
+	<span class="s">"heirloom tomato"</span><span class="p">:</span> <span class="mf">0.89</span><span class="p">,</span>
+	<span class="s">"cherry tomato pack"</span><span class="p">:</span> <span class="mf">3.00</span>
+<span class="p">}</span></code></pre>
+</figure>
+<p>You specify the dictionary between the<span> </span><code class="highlighter-rouge"><span class="p">{}</span></code>. Key / value pairs are specified as list (separated by commas). The<span> </span><em>key</em><span> </span>is on the left side, and the<span> </span><em>value</em><span> </span>is on the right side. Notice how I split up the dictionary definition on multiple lines - I did that just for convenience. You can also write the dictionary on the entire line, but it is hard to read (and it probably even goes off your browser window screen):</p>
+<p><span>您可以在之間指定字典</span><code class="highlighter-rouge"><span class="p">{}</span></code><span><span>。</span><span>鍵/值對被指定為列表（以逗號分隔）。</span><span>在</span></span><em><span><span>關鍵的</span></span></em><span><span>是在左側，和</span></span><em><span><span>值</span></span></em><span><span>是在右側。</span><span>請注意，我是如何在多行上拆分字典定義的-我這樣做只是為了方便。</span><span>您還可以在整個行上編寫字典，但是很難閱讀（它甚至可能從您的瀏覽器窗口屏幕上消失）：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">price_dictionary</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s">"banana"</span><span class="p">:</span> <span class="mf">1.50</span><span class="p">,</span> <span class="s">"avocado"</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span> <span class="s">"heirloom tomato"</span><span class="p">:</span> <span class="mf">0.89</span><span class="p">,</span> <span class="s">"cherry tomato pack"</span><span class="p">:</span> <span class="mf">3.00</span><span class="p">}</span></code></pre>
+</figure>
+<p>Now that we have the dictionary, we can query it (ask it) for the values associated with each key (for the prices associated with each food). We do that using brackets (<code class="highlighter-rouge">[]</code>). For example, to get the price of a banana:</p>
+<p><span>現在我們有了字典，我們可以查詢（詢問）與每個鍵關聯的值（與每種食物關聯的價格）。我們使用方括號（</span><code class="highlighter-rouge">[]</code><span><span>）進行操作。</span><span>例如，要獲取香蕉的價格：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"banana"</span><span class="p">])</span>
+<span class="mf">1.50</span></code></pre>
+</figure>
+<p>To get a list of all the keys, use the<span> </span><code class="highlighter-rouge">.keys()</code><span> </span>method:</p>
+<p><span>要獲取所有鍵的列表，請使用</span><code class="highlighter-rouge">.keys()</code><span><span>方法：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="p">[</span><span class="s">"banana"</span><span class="p">,</span> <span class="s">"avocado"</span><span class="p">,</span> <span class="s">"heirloom tomato"</span><span class="p">,</span> <span class="s">"cherry tomato pack"</span><span class="p">]</span></code></pre>
+</figure>
+<p>We have created our dictionary with many items in it, but we can also add items to it one by one. It is almost like accessing an element in the dictionary, except instead of using the element, we assign something to it.</p>
+<p><span>我們創建了包含很多項目的字典，但是我們也可以一個接一個地添加項目。</span><span>就像訪問字典中的一個元素一樣，除了我們不使用該元素，而是為其分配了一些內容。</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"granny smith apple"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.49</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"red delicious apple"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.35</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"granny smith apple"</span><span class="p">])</span>
+<span class="mf">0.49</span></code></pre>
+</figure>
+<p>Not all key / value pairs have to be the same. You can do something like:</p>
+<p><span>並非所有鍵/值對都必須相同。</span><span>您可以執行以下操作：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">]</span> <span class="o">=</span> <span class="s">"only at Petco"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">])</span>
+<span class="n">only</span> <span class="n">at</span> <span class="n">Petco</span></code></pre>
+</figure>
+<p>Of course, this can get messy quickly, so be careful!</p>
+<p><span>當然，這會很快變得混亂，所以要小心！</span></p>
+<h3>MORE ON DICTIONARY KEYS 有關字典鍵的更多信息</h3>
+<p>Dictionary keys must be unique. If you try to add an element to your dictionary with the same key, it will overwrite the value previously at that key:</p>
+<p><span>字典鍵必須唯一。</span><span>如果您嘗試使用相同的鍵將元素添加到字典中，它將覆蓋先前在該鍵上的值：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">])</span>
+<span class="n">only</span> <span class="n">at</span> <span class="n">Petco</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.99</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">])</span>
+<span class="mf">10.99</span></code></pre>
+</figure>
+<p>If you try to ask the dictionary for a key that doesn’t exist, it will throw a<span> </span><code class="highlighter-rouge">KeyError</code><span> </span>in your console, or your program will crash:</p>
+<p><span>如果您嘗試向字典查詢不存在的鍵，它將</span><code class="highlighter-rouge">KeyError</code><span><span>在控制台中</span><span>拋出a<span> </span></span><span>，否則程序將崩潰：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"lemon"</span><span class="p">]</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">KeyError</span><span class="p">:</span> <span class="s">'lemon'</span></code></pre>
+</figure>
+<p>We will talk about how to “catch” errors in later exercises, but for now, there is another way to make sure you don’t throw an error. Instead of accessing elements in a dictionary with the<span> </span><code class="highlighter-rouge">[]</code><span> </span>notation, you can instead use the<span> </span><code class="highlighter-rouge">.get()</code><span> </span>method. As the second argument to<span> </span><code class="highlighter-rouge">.get()</code>, you write down what the<span> </span><em>default value</em><span> </span>is for the dictionary: if there is no key like the one you wanted, what the dictionary should return:</p>
+<p><span>我們將在以後的練習中討論如何“捕獲”錯誤，但是目前，還有另一種方法可以確保您不會拋出錯誤。</span><code class="highlighter-rouge">[]</code><span><span>您可以使用</span></span><code class="highlighter-rouge">.get()</code><span><span>方法</span><span>來代替使用符號</span><span>訪問字典中的元素</span><span>。</span><span>作為的第二個參數</span></span><code class="highlighter-rouge">.get()</code><span><span>，您寫下</span><span>字典</span><span>的</span></span><em><span><span>默認值</span></span></em><span><span>是</span><span>什麼</span><span>：如果沒有想要的鍵，則字典應該返回什麼：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"banana"</span><span class="p">,</span> <span class="s">"no food like this"</span><span class="p">))</span>
+<span class="mf">1.50</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"lemon"</span><span class="p">,</span> <span class="s">"no food like this"</span><span class="p">))</span>
+<span class="n">no</span> <span class="n">food</span> <span class="n">like</span> <span class="n">this</span></code></pre>
+</figure>
+<p>This can be a helpful way of avoiding causing your program to crash.</p>
+<p>Not all Python objects can be keys to a dictionary. For something to be a key in a dictionary, it must be<span> </span><em>immutable</em>. Basically, it means that you can’t change that variable somewhere else. So for example, numbers and strings can be keys in a dictionary, but lists cannot. Because you can<span> </span><code class="highlighter-rouge">.append()</code><span> </span>to a list, it cannot be a key in your dictionary. Lists can be values, just not keys:</p>
+<p><span>這是避免引起程序崩潰的有用方法。</span></p>
+<p><span><span>並非所有的Python對像都可以是字典的鍵。</span><span>為了使某些東西成為字典中的鍵，它必須是</span></span><em><span><span>不可變的</span></span></em><span><span>。</span><span>基本上，這意味著您無法在其他地方更改該變量。</span><span>因此，例如，數字和字符串可以是字典中的鍵，而列表則不能。</span><span>因為可以</span></span><code class="highlighter-rouge">.append()</code><span><span>列出，所以它不能成為字典中的鍵。</span><span>列表可以是值，而不能是鍵：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span> <span class="o">=</span> <span class="s">"new food"</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">TypeError</span><span class="p">:</span> <span class="n">unhashable</span> <span class="nb">type</span><span class="p">:</span> <span class="s">'list'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"lettuce"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.50</span><span class="p">,</span> <span class="mf">3.50</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"lettuce"</span><span class="p">])</span>
+<span class="p">[</span><span class="mf">1.50</span><span class="p">,</span> <span class="mf">3.50</span><span class="p">]</span></code></pre>
+</figure>
+<p>Lastly, if we want to check if a particular key is in our dictonary, it is very easy. Just use the<span> </span><code class="highlighter-rouge">in</code><span> </span>keyword:</p>
+<p><span>最後，如果我們要檢查字典中是否有特定的鍵，這很容易。只需使用</span><code class="highlighter-rouge">in</code><span><span>關鍵字：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="s">"lemon"</span> <span class="ow">in</span> <span class="n">price_dictionary</span>
+<span class="bp">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">"banana"</span> <span class="ow">in</span> <span class="n">price_dictionary</span>
+<span class="bp">True</span></code></pre>
+</figure>
+<p>These checks can be used together with<span> </span><code class="highlighter-rouge">if</code><span> </span>statements to make more complex programs.</p>
+<p><span>這些檢查可以與</span><code class="highlighter-rouge">if</code><span><span>語句</span><span>一起使用</span><span>以製作更複雜的程序。</span></span></p>
+<h3>String formatting 字符串格式</h3>
+<p>We’ve talked about strings a lot on this blog:</p>
+<ul>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/01/29/01-character-input.html)">Exercise 1 about printing basic strings</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/03/12/06-string-lists.html)">Exercise 6 about turning strings into lists</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/05/21/15-reverse-word-order.html)">Exercise 15 about where `join` statements are introduced</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+</ul>
+<p>But we want to introduce one more optional concept for this exercise related to string formatting. There are a number of ways to format strings in Python, so I am just going to show you one quick way for a scenario you find yourself in often while programming.</p>
+<p>A common scenario is like this: you want to print both a string and a number in the same line using one<span> </span><code class="highlighter-rouge">print()</code><span> </span>statement. You can solve this problem like so:</p>
+<p><span>我們在此博客上討論了很多字符串：</span></p>
+<ul>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/01/29/01-character-input.html)"><span><span>練習1關於打印基本字符串</span></span></a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/03/12/06-string-lists.html)"><span><span>練習6：將字符串轉換為列表</span></span></a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/05/21/15-reverse-word-order.html)"><span><span>練習15關於在哪裡引入`join`語句</span></span></a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+</ul>
+<p><span><span>但是，我們想為此練習引入與字符串格式化有關的另一個可選概念。</span><span>有很多方法可以用Python格式化字符串，因此，我將向您展示一種快速編程的方法，以解決您經常在編程時遇到的情況。</span></span></p>
+<p><span><span>常見的情況是這樣的：您想使用一個</span></span><code class="highlighter-rouge">print()</code><span><span>語句</span><span>在同一行中同時打印字符串和數字</span><span>。</span><span>您可以這樣解決此問題：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"my number is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="s">" and his number is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="n">my</span> <span class="n">number</span> <span class="ow">is</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">his</span> <span class="n">number</span> <span class="ow">is</span> <span class="mi">10</span></code></pre>
+</figure>
+<p>But it gets tedious to use<span> </span><code class="highlighter-rouge">+</code><span> </span>and<span> </span><code class="highlighter-rouge">str()</code>. Instead, you can use the<span> </span><code class="highlighter-rouge">.format()</code><span> </span>method to<span> </span><em>cast</em><span> </span>(i.e. transform) your number into a string when it gets printed.</p>
+<p><span>但是使用</span><code class="highlighter-rouge">+</code><span><span>和</span><span>會很麻煩</span></span><code class="highlighter-rouge">str()</code><span><span>。</span><span>相反，你可以使用</span></span><code class="highlighter-rouge">.format()</code><span><span>的方法來</span></span><em><span><span>投</span></span></em><span><span>（即變換）你的電話號碼轉換成字符串時，它就會被打印出來。</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"my number is {} and his number is {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
+<span class="n">my</span> <span class="n">number</span> <span class="ow">is</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">his</span> <span class="n">number</span> <span class="ow">is</span> <span class="mi">10</span></code></pre>
+</figure>
+<p>What we are doing is substituting the symbol<span> </span><code class="highlighter-rouge"><span class="p">{}</span></code><span> </span>in the print statement in the string we want to display in the exact place we want the number to go, and use the<span> </span><code class="highlighter-rouge">.format()</code><span> </span>to pass variables to the<span> </span><code class="highlighter-rouge"><span class="p">{}</span></code><span> </span>that appear in order. What happens is the variables<span> </span><code class="highlighter-rouge">a</code><span> </span>and<span> </span><code class="highlighter-rouge">b</code><span> </span>get converted into strings automatically and injected into our<span> </span><code class="highlighter-rouge">print</code><span> </span>statement cleanly. You can do this with floats, lists, dictionaries, or anything else you want to display.</p>
+<p>There are a number of different formatting options if you want to get specific about how many decimal points to display, etc., but that is out of the scope of this exercise. If you want to read more about string formatting in Python, you can read about it<span> </span><a href="https://pyformat.info/">on this helpful website that goes into a great amount of detail</a>.</p>
+<p><span>我們正在做的是將</span><code class="highlighter-rouge"><span class="p">{}</span></code><span>要顯示的字符串中的符號替換為打印語句中要顯示的數字的確切位置，然後使用</span><code class="highlighter-rouge">.format()</code><span>將變量傳遞給</span><code class="highlighter-rouge"><span class="p">{}</span></code><span>按順序出現的。發生的事情是變量，</span><code class="highlighter-rouge">a</code><span>並</span><code class="highlighter-rouge">b</code><span>自動將其轉換為字符串並</span><code class="highlighter-rouge">print</code><span>乾淨地註入到我們的語句中。您可以使用浮點數，列表，字典或其他任何想要顯示的內容來執行此操作。</span></p>
+<p><span><span>如果要具體說明要顯示的小數點數等，可以使用多種格式設置選項，但這不在本練習的範圍之內。</span><span>如果您想了解有關Python中字符串格式的更多信息，可以</span></span><a href="https://pyformat.info/"><span><span>在這個非常有用的網站上詳細</span></span></a><span><span>了解它</span><span>。</span></span></p>
+<h3>Solutions 解決方案</h3>
+<p><em>This exercise is Part 1 of 4 of the birthday data exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>,<span> </span><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html">Part 3</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></p>
+<p>For this exercise, we will keep track of when our friend’s birthdays are, and be able to find that information based on their name. Create a dictionary (in your file) of names and birthdays. When you run your program it should ask the user to enter a name, and return the birthday of that person back to them. The interaction should look something like this:</p>
+<p><em><span>此練習是生日數據練習系列4的第1部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"><span>第2部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html"><span>第3</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">第4部分</a>。</span></em></p>
+<p><span><span>在本練習中，我們將跟踪朋友的生日，並能夠根據他們的姓名查找該信息。</span><span>在您的文件中創建一個名稱和生日字典。</span><span>當您運行程序時，應要求用戶輸入名稱，並將該人的生日返回給他們。</span><span>交互應如下所示：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon">&gt;&gt;&gt; Welcome to the birthday dictionary. We know the birthdays of:
+Albert Einstein
+Benjamin Franklin
+Ada Lovelace
+&gt;&gt;&gt; Who's birthday do you want to look up?
+Benjamin Franklin
+&gt;&gt;&gt; Benjamin Franklin's birthday is 01/17/1706.</code></pre>
+</figure>
+<h3>Sample solution 樣品溶液</h3>
+<p></p>
+<p>One reader does the basics: <span>一位讀者會做基礎：</span></p>
+<p><span></span></p>
+<div class="gist" id="gist44175646">
+<div class="gist-file">
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file my-2" id="file-task33-py">
+<div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
+<pre>if __name__ == '__main__':
+
+    birthdays = {
+        'Albert Einstein': '03/14/1879',
+        'Benjamin Franklin': '01/17/1706',
+        'Ada Lovelace': '12/10/1815',
+        'Donald Trump': '06/14/1946',
+        'Rowan Atkinson': '01/6/1955'}
+
+    print('Welcome to the birthday dictionary. We know the birthdays of:')
+    for name in birthdays:
+        print(name)
+
+    print('Who\'s birthday do you want to look up?')
+    name = input()
+    if name in birthdays:
+        print('{}\'s birthday is {}.'.format(name, birthdays[name]))
+    else:
+        print('Sadly, we don\'t have {}\'s birthday.'.format(name))<br/><br/><span>And here is another reader submission: 這是另一位讀者的來稿：<br/></span></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre>import time
+Birthdays ={
+    "Albert Einstein": "14/3/1889",
+    "Bill Gates": "28/10/1955",
+    "Steve Jobs": "24/2/1955",
+}
+print("Welcome to the Birthday game ! We have the birthdays to:")
+time.sleep(1)
+for x in Birthdays:
+    print(x)
+    time.sleep(0.7)
+choice= input("\nWho's birthday do you want to look up?")
+
+if choice in Birthdays:
+    print("The birthday of {} is: ".format(choice))
+    print(Birthdays[choice])</pre>

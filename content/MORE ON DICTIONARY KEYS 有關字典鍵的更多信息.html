@@ -133,11 +133,56 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">PCH 16  Internet Connectivity 互聯網連接 << <a href='PCH 16  Internet Connectivity 互聯網連接.html'>Previous</a> <a href='Networking  Internet Connectivity  聯網 Internet連接.html'>Next</a> >> Networking  Internet Connectivity  聯網 Internet連接<br /><h1>Internet Connectivity 互聯網連接</h1>
-<h4><span>Overview 總覽</span></h4>
-<p><span>In this module, we will discuss the various types of Internet connectivity for networks. Essentially, this connectivity provides our link to the wide area network (WAN). Each type of connection has benefits and drawbacks, so it is important that you, as a technician, understand which WAN connectivity method you should use in a given scenario. Also, we will cover the basic methods of connecting a small office/home office (SOHO) network, to include wireless devices and connection to the Internet.</span></p>
-<p><span><span>在本模塊中，我們將討論網絡的各種類型的Internet連接。</span><span>本質上，這種連通性提供了我們到廣域網（WAN）的鏈接。</span><span>每種類型的連接都有其優點和缺點，因此，作為一名技術人員，了解在給定方案中應使用哪種WAN連接方法非常重要。</span><span>此外，我們還將介紹連接小型辦公室/家庭辦公室（SOHO）網絡的基本方法，包括無線設備和與Internet的連接。</span></span></p>
-<br />PCH 16  Internet Connectivity 互聯網連接 << <a href='PCH 16  Internet Connectivity 互聯網連接.html'>Previous</a> <a href='Networking  Internet Connectivity  聯網 Internet連接.html'>Next</a> >> Networking  Internet Connectivity  聯網 Internet連接</div>
+    <div id="tipue_search_content">QUICK REVIEW 快速復審 << <a href='QUICK REVIEW 快速復審.html'>Previous</a> <a href='String formatting 字符串格式.html'>Next</a> >> String formatting 字符串格式<br /><h1>MORE ON DICTIONARY KEYS 有關字典鍵的更多信息</h1>
+<p>Dictionary keys must be unique. If you try to add an element to your dictionary with the same key, it will overwrite the value previously at that key:</p>
+<p><span>字典鍵必須唯一。</span><span>如果您嘗試使用相同的鍵將元素添加到字典中，它將覆蓋先前在該鍵上的值：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">])</span>
+<span class="n">only</span> <span class="n">at</span> <span class="n">Petco</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.99</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">])</span>
+<span class="mf">10.99</span></code></pre>
+</figure>
+<p>If you try to ask the dictionary for a key that doesn’t exist, it will throw a<span> </span><code class="highlighter-rouge">KeyError</code><span> </span>in your console, or your program will crash:</p>
+<p><span>如果您嘗試向字典查詢不存在的鍵，它將</span><code class="highlighter-rouge">KeyError</code><span><span>在控制台中</span><span>拋出a<span> </span></span><span>，否則程序將崩潰：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"lemon"</span><span class="p">]</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">KeyError</span><span class="p">:</span> <span class="s">'lemon'</span></code></pre>
+</figure>
+<p>We will talk about how to “catch” errors in later exercises, but for now, there is another way to make sure you don’t throw an error. Instead of accessing elements in a dictionary with the<span> </span><code class="highlighter-rouge">[]</code><span> </span>notation, you can instead use the<span> </span><code class="highlighter-rouge">.get()</code><span> </span>method. As the second argument to<span> </span><code class="highlighter-rouge">.get()</code>, you write down what the<span> </span><em>default value</em><span> </span>is for the dictionary: if there is no key like the one you wanted, what the dictionary should return:</p>
+<p><span>我們將在以後的練習中討論如何“捕獲”錯誤，但是目前，還有另一種方法可以確保您不會拋出錯誤。</span><code class="highlighter-rouge">[]</code><span><span>您可以使用</span></span><code class="highlighter-rouge">.get()</code><span><span>方法</span><span>來代替使用符號</span><span>訪問字典中的元素</span><span>。</span><span>作為的第二個參數</span></span><code class="highlighter-rouge">.get()</code><span><span>，您寫下</span><span>字典</span><span>的</span></span><em><span><span>默認值</span></span></em><span><span>是</span><span>什麼</span><span>：如果沒有想要的鍵，則字典應該返回什麼：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"banana"</span><span class="p">,</span> <span class="s">"no food like this"</span><span class="p">))</span>
+<span class="mf">1.50</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"lemon"</span><span class="p">,</span> <span class="s">"no food like this"</span><span class="p">))</span>
+<span class="n">no</span> <span class="n">food</span> <span class="n">like</span> <span class="n">this</span></code></pre>
+</figure>
+<p>This can be a helpful way of avoiding causing your program to crash.</p>
+<p>Not all Python objects can be keys to a dictionary. For something to be a key in a dictionary, it must be<span> </span><em>immutable</em>. Basically, it means that you can’t change that variable somewhere else. So for example, numbers and strings can be keys in a dictionary, but lists cannot. Because you can<span> </span><code class="highlighter-rouge">.append()</code><span> </span>to a list, it cannot be a key in your dictionary. Lists can be values, just not keys:</p>
+<p><span>這是避免引起程序崩潰的有用方法。</span></p>
+<p><span><span>並非所有的Python對像都可以是字典的鍵。</span><span>為了使某些東西成為字典中的鍵，它必須是</span></span><em><span><span>不可變的</span></span></em><span><span>。</span><span>基本上，這意味著您無法在其他地方更改該變量。</span><span>因此，例如，數字和字符串可以是字典中的鍵，而列表則不能。</span><span>因為可以</span></span><code class="highlighter-rouge">.append()</code><span><span>列出，所以它不能成為字典中的鍵。</span><span>列表可以是值，而不能是鍵：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span> <span class="o">=</span> <span class="s">"new food"</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">TypeError</span><span class="p">:</span> <span class="n">unhashable</span> <span class="nb">type</span><span class="p">:</span> <span class="s">'list'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"lettuce"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.50</span><span class="p">,</span> <span class="mf">3.50</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"lettuce"</span><span class="p">])</span>
+<span class="p">[</span><span class="mf">1.50</span><span class="p">,</span> <span class="mf">3.50</span><span class="p">]</span></code></pre>
+</figure>
+<p>Lastly, if we want to check if a particular key is in our dictonary, it is very easy. Just use the<span> </span><code class="highlighter-rouge">in</code><span> </span>keyword:</p>
+<p><span>最後，如果我們要檢查字典中是否有特定的鍵，這很容易。只需使用</span><code class="highlighter-rouge">in</code><span><span>關鍵字：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="s">"lemon"</span> <span class="ow">in</span> <span class="n">price_dictionary</span>
+<span class="bp">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">"banana"</span> <span class="ow">in</span> <span class="n">price_dictionary</span>
+<span class="bp">True</span></code></pre>
+</figure>
+<p>These checks can be used together with<span> </span><code class="highlighter-rouge">if</code><span> </span>statements to make more complex programs.</p>
+<p><span>這些檢查可以與</span><code class="highlighter-rouge">if</code><span><span>語句</span><span>一起使用</span><span>以製作更複雜的程序。</span></span></p>
+<br />QUICK REVIEW 快速復審 << <a href='QUICK REVIEW 快速復審.html'>Previous</a> <a href='String formatting 字符串格式.html'>Next</a> >> String formatting 字符串格式</div>
         
     <!-- footer -->
       <div class="container">

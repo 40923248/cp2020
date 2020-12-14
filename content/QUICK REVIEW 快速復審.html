@@ -133,11 +133,55 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">PCH 16  Internet Connectivity 互聯網連接 << <a href='PCH 16  Internet Connectivity 互聯網連接.html'>Previous</a> <a href='Networking  Internet Connectivity  聯網 Internet連接.html'>Next</a> >> Networking  Internet Connectivity  聯網 Internet連接<br /><h1>Internet Connectivity 互聯網連接</h1>
-<h4><span>Overview 總覽</span></h4>
-<p><span>In this module, we will discuss the various types of Internet connectivity for networks. Essentially, this connectivity provides our link to the wide area network (WAN). Each type of connection has benefits and drawbacks, so it is important that you, as a technician, understand which WAN connectivity method you should use in a given scenario. Also, we will cover the basic methods of connecting a small office/home office (SOHO) network, to include wireless devices and connection to the Internet.</span></p>
-<p><span><span>在本模塊中，我們將討論網絡的各種類型的Internet連接。</span><span>本質上，這種連通性提供了我們到廣域網（WAN）的鏈接。</span><span>每種類型的連接都有其優點和缺點，因此，作為一名技術人員，了解在給定方案中應使用哪種WAN連接方法非常重要。</span><span>此外，我們還將介紹連接小型辦公室/家庭辦公室（SOHO）網絡的基本方法，包括無線設備和與Internet的連接。</span></span></p>
-<br />PCH 16  Internet Connectivity 互聯網連接 << <a href='PCH 16  Internet Connectivity 互聯網連接.html'>Previous</a> <a href='Networking  Internet Connectivity  聯網 Internet連接.html'>Next</a> >> Networking  Internet Connectivity  聯網 Internet連接</div>
+    <div id="tipue_search_content">Dictionaries 辭典 << <a href='Dictionaries 辭典.html'>Previous</a> <a href='MORE ON DICTIONARY KEYS 有關字典鍵的更多信息.html'>Next</a> >> MORE ON DICTIONARY KEYS 有關字典鍵的更多信息<br /><h1>QUICK REVIEW 快速復審</h1>
+<p>The main topic for this week is the concept of a<span> </span><em>dictionary</em>. In Python they are called dictionaries, but in other languages they may be called<span> </span><em>maps</em><span> </span>or<span> </span><em>hashmaps</em>. The concept is the same: it is a way to use a<span> </span><em>key</em><span> </span>to access some<span> </span><em>value</em>. It is mapping one set of data (the keys) to another set of data (the values). The only way to access the<span> </span><em>value</em><span> </span>part of the dictionary is to use the<span> </span><em>key</em>.</p>
+<p>As an example, grocery store systems can store the prices for various items by using a dictionary. In Python, it would look something like this:</p>
+<p><span>本週的主題是</span><em><span>字典</span></em><span>的概念。在Python中，它們稱為字典，在其他語言中，它們可以稱為</span><em><span>map</span></em><span>或</span><em><span>hashmaps</span></em><span>。概念是相同的：這是一種使用</span><em><span>鍵</span></em><span>來獲取某些</span><em><span>值的方法</span></em><span>。它正在將一組數據（鍵）映射到另一組數據（值）。訪問字典的</span><em><span>值</span></em><span>部分的唯一方法是使用</span><em><span>鍵</span></em><span>。</span></p>
+<p><span><span>例如，雜貨店系統可以使用字典來存儲各種商品的價格。</span><span>在Python中，它看起來像這樣：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">price_dictionary</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s">"banana"</span><span class="p">:</span> <span class="mf">1.50</span><span class="p">,</span>
+	<span class="s">"avocado"</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span>
+	<span class="s">"heirloom tomato"</span><span class="p">:</span> <span class="mf">0.89</span><span class="p">,</span>
+	<span class="s">"cherry tomato pack"</span><span class="p">:</span> <span class="mf">3.00</span>
+<span class="p">}</span></code></pre>
+</figure>
+<p>You specify the dictionary between the<span> </span><code class="highlighter-rouge"><span class="p">{}</span></code>. Key / value pairs are specified as list (separated by commas). The<span> </span><em>key</em><span> </span>is on the left side, and the<span> </span><em>value</em><span> </span>is on the right side. Notice how I split up the dictionary definition on multiple lines - I did that just for convenience. You can also write the dictionary on the entire line, but it is hard to read (and it probably even goes off your browser window screen):</p>
+<p><span>您可以在之間指定字典</span><code class="highlighter-rouge"><span class="p">{}</span></code><span><span>。</span><span>鍵/值對被指定為列表（以逗號分隔）。</span><span>在</span></span><em><span><span>關鍵的</span></span></em><span><span>是在左側，和</span></span><em><span><span>值</span></span></em><span><span>是在右側。</span><span>請注意，我是如何在多行上拆分字典定義的-我這樣做只是為了方便。</span><span>您還可以在整個行上編寫字典，但是很難閱讀（它甚至可能從您的瀏覽器窗口屏幕上消失）：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">price_dictionary</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s">"banana"</span><span class="p">:</span> <span class="mf">1.50</span><span class="p">,</span> <span class="s">"avocado"</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span> <span class="s">"heirloom tomato"</span><span class="p">:</span> <span class="mf">0.89</span><span class="p">,</span> <span class="s">"cherry tomato pack"</span><span class="p">:</span> <span class="mf">3.00</span><span class="p">}</span></code></pre>
+</figure>
+<p>Now that we have the dictionary, we can query it (ask it) for the values associated with each key (for the prices associated with each food). We do that using brackets (<code class="highlighter-rouge">[]</code>). For example, to get the price of a banana:</p>
+<p><span>現在我們有了字典，我們可以查詢（詢問）與每個鍵關聯的值（與每種食物關聯的價格）。我們使用方括號（</span><code class="highlighter-rouge">[]</code><span><span>）進行操作。</span><span>例如，要獲取香蕉的價格：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"banana"</span><span class="p">])</span>
+<span class="mf">1.50</span></code></pre>
+</figure>
+<p>To get a list of all the keys, use the<span> </span><code class="highlighter-rouge">.keys()</code><span> </span>method:</p>
+<p><span>要獲取所有鍵的列表，請使用</span><code class="highlighter-rouge">.keys()</code><span><span>方法：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="p">[</span><span class="s">"banana"</span><span class="p">,</span> <span class="s">"avocado"</span><span class="p">,</span> <span class="s">"heirloom tomato"</span><span class="p">,</span> <span class="s">"cherry tomato pack"</span><span class="p">]</span></code></pre>
+</figure>
+<p>We have created our dictionary with many items in it, but we can also add items to it one by one. It is almost like accessing an element in the dictionary, except instead of using the element, we assign something to it.</p>
+<p><span>我們創建了包含很多項目的字典，但是我們也可以一個接一個地添加項目。</span><span>就像訪問字典中的一個元素一樣，除了我們不使用該元素，而是為其分配了一些內容。</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"granny smith apple"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.49</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"red delicious apple"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.35</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"granny smith apple"</span><span class="p">])</span>
+<span class="mf">0.49</span></code></pre>
+</figure>
+<p>Not all key / value pairs have to be the same. You can do something like:</p>
+<p><span>並非所有鍵/值對都必須相同。</span><span>您可以執行以下操作：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">]</span> <span class="o">=</span> <span class="s">"only at Petco"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">])</span>
+<span class="n">only</span> <span class="n">at</span> <span class="n">Petco</span></code></pre>
+</figure>
+<p>Of course, this can get messy quickly, so be careful!</p>
+<p><span>當然，這會很快變得混亂，所以要小心！</span></p>
+<br />Dictionaries 辭典 << <a href='Dictionaries 辭典.html'>Previous</a> <a href='MORE ON DICTIONARY KEYS 有關字典鍵的更多信息.html'>Next</a> >> MORE ON DICTIONARY KEYS 有關字典鍵的更多信息</div>
         
     <!-- footer -->
       <div class="container">
