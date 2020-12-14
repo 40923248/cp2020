@@ -133,14 +133,168 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">When to make plots 什麼時候作圖 << <a href='When to make plots 什麼時候作圖.html'>Previous</a> <a href='Installing bokeh 安裝背景虛化.html'>Next</a> >> Installing bokeh 安裝背景虛化<br /><h1>Plotting libraries in Python 用Python繪製庫</h1>
-<p>If you are looking for a plotting library in Python, you have two main options: matplotlib and bokeh. Today I want to discuss bokeh, because I think it will become more popular in years to come.</p>
-<p>Many Python developers (and especially data scientists and researchers) will tell you that the most commonly used plotting library in Python is matplotlib. I myself was a matplotlib user for many years - the integrations with Python data libraries are great, and migrating from the MATLAB plotting environment to matplotlib is easy. But a friend introduced me to bokeh and I was hooked ever since. Because it is based on D3.js, the visualizations look smooth and professional.</p>
-<p>There is no one “best” plotting library - you should use whichever one feels and looks better for you. But for the rest of this post, I’ll talk about how to use bokeh to make a basic plot.</p>
-<p>如果要在Python中尋找繪圖庫，則有兩個主要選項：matplotlib和bokeh。今天，我想討論散景，因為我認為它會在未來幾年變得越來越流行。</p>
-<p>許多Python開發人員（尤其是數據科學家和研究人員）會告訴您，Python中最常用的繪圖庫是matplotlib。我本人是matplotlib用戶多年，與Python數據庫的集成非常好，並且從MATLAB繪圖環境遷移到matplotlib很容易。但是一個朋友向我介紹了散景，從那時起我就迷上了。由於它基於D3.js，因此可視化效果看起來既流暢又專業。</p>
-<p>沒有一個“最佳”繪圖庫-您應該使用對您而言感覺更好的一種。但是，在本文的其餘部分中，我將討論如何使用bokeh進行基本繪圖。</p>
-<br />When to make plots 什麼時候作圖 << <a href='When to make plots 什麼時候作圖.html'>Previous</a> <a href='Installing bokeh 安裝背景虛化.html'>Next</a> >> Installing bokeh 安裝背景虛化</div>
+    <div id="tipue_search_content">Concepts 概念 << <a href='Concepts 概念.html'>Previous</a> <a href='Birthday Plots 生日情節.html'>Next</a> >> Birthday Plots 生日情節<br /><h1>Solutions解決方案</h1>
+<p>Exercise 27 練習27<br/>This exercise is Part 3 of 4 of the Tic Tac Toe exercise series. The other exercises are: Part 1, Part 2, and Part 4.</p>
+<p>In a previous exercise we explored the idea of using a list of lists as a “data structure” to store information about a tic tac toe game. In a tic tac toe game, the “game server” needs to know where the Xs and Os are in the board, to know whether player 1 or player 2 (or whoever is X and O won).</p>
+<p>There has also been an exercise about drawing the actual tic tac toe gameboard using text characters.</p>
+<p>The next logical step is to deal with handling user input. When a player (say player 1, who is X) wants to place an X on the screen, they can’t just click on a terminal. So we are going to approximate this clicking simply by asking the user for a coordinate of where they want to place their piece.</p>
+<p>As a reminder, our tic tac toe game is really a list of lists. The game starts out with an empty game board like this:</p>
+<p>game = [[0, 0, 0],<br/> [0, 0, 0],<br/> [0, 0, 0]]<br/>The computer asks Player 1 (X) what their move is (in the format row,col), and say they type 1,3. Then the game would print out</p>
+<p>game = [[0, 0, X],<br/> [0, 0, 0],<br/> [0, 0, 0]]<br/>And ask Player 2 for their move, printing an O in that place.</p>
+<p>Things to note:</p>
+<p>For this exercise, assume that player 1 (the first player to move) will always be X and player 2 (the second player) will always be O.<br/>Notice how in the example I gave coordinates for where I want to move starting from (1, 1) instead of (0, 0). To people who don’t program, starting to count at 0 is a strange concept, so it is better for the user experience if the row counts and column counts start at 1. This is not required, but whichever way you choose to implement this, it should be explained to the player.<br/>Ask the user to enter coordinates in the form “row,col” - a number, then a comma, then a number. Then you can use your Python skills to figure out which row and column they want their piece to be in.<br/>Don’t worry about checking whether someone won the game, but if a player tries to put a piece in a game position where there already is another piece, do not allow the piece to go there.<br/>Bonus:</p>
+<p>For the “standard” exercise, don’t worry about “ending” the game - no need to keep track of how many squares are full. In a bonus version, keep track of how many squares are full and automatically stop asking for moves when there are no more valid moves.</p>
+<p>此練習是Tic Tac Toe練習系列4的第3部分。其他練習是：第1部分，第2部分和第4部分。</p>
+<p>在先前的練習中，我們探討了使用列表列表作為“數據結構”來存儲有關井字遊戲的信息的想法。在一個井字遊戲中，“遊戲服務器”需要知道其中XS和Os為中板，知道是否播放器1或播放器2（或誰是X和O韓元）。</p>
+<p>還進行了有關使用文本字符繪製實際井字遊戲板的練習。</p>
+<p>下一步的邏輯步驟是處理用戶輸入。當玩家（例如玩家1，即X）想要X在屏幕上放置一個時，他們不能僅單擊終端。因此，我們將簡單地通過詢問用戶要放置其作品的坐標來近似此點擊。</p>
+<p>提醒一下，我們的井字遊戲實際上是一個列表列表。遊戲從一個空的遊戲板開始，如下所示：</p>
+<p>game = [[0, 0, 0],<br/> [0, 0, 0],<br/> [0, 0, 0]]<br/>計算機問玩家1（X）他們的移動方向（格式為row,col），然後說出他們的輸入1,3。然後遊戲會打印出來</p>
+<p>game = [[0, 0, X],<br/> [0, 0, 0],<br/> [0, 0, 0]]<br/>並詢問玩家2的舉動，並O在該位置打印一個。</p>
+<p>注意事項：</p>
+<p>在本練習中，假設玩家1（第一位移動的玩家）將始終為，X而玩家2（第二位移動的玩家）將始終為O。<br/>請注意，在示例中，我如何給出要從（1，1）而不是（0，0）開始移動的坐標。對於不編程的人，從0開始計數是一個奇怪的概念，因此如果行計數和列計數從1開始，則對用戶體驗更好。這不是必需的，但是無論選擇哪種方式來實現，應該向玩家解釋。<br/>要求用戶以“ row，col”的形式輸入坐標-一個數字，然後是一個逗號，然後是一個數字。然後，您可以使用您的Python技能來確定他們希望自己的作品位於哪一行。<br/>不必擔心是否有人贏得了比賽，但是如果玩家試圖將一個棋子放置在已經有另一個棋子的遊戲位置中，則不要讓該棋子去那裡。<br/>獎金：</p>
+<p>對於“標準”練習，不必擔心“結束”遊戲-無需跟踪多少個正方形已滿。在獎勵版本中，跟踪多少個正方形已滿，並在沒有更多有效移動時自動停止要求移動。</p>
+<h4>Sample solutions 樣品溶液</h4>
+<p>Here is one solution that does not fully complete the exercise, but gives a bit of food for thought. The drawboard function is a general function that can be used to draw the game board with any given inputs.</p>
+<p><span>這是一個解決方案，它不能完全完成練習，但可以給您一些思考。該</span><code class="highlighter-rouge">drawboard</code><span>功能是一個通用功能，可用於以任何給定的輸入繪製遊戲板。</span></p>
+<p><span></span></p>
+<pre>def drawboard(board):
+    print ('    |   |   ')
+    print ('' +board[6]+ '    | ' +board[7]+ '  |   ' +board[8] )
+    print ('    |   |   ')
+    print ('---------------')
+    print ('    |   |   ')
+    print ('' +board[3]+ '    | ' +board[4]+ '  | ' +board[5] )
+    print ('    |   |   ')
+    print('-----------------')
+    print ('    |   |   ')
+    print ('' +board[0]+ '    | ' +board[1]+ '  |' +board[2] )
+    print ('    |   |   ')
+
+drawboard(['', '', '', '', '', '', '', '', ''])<br/><br/><span>Another solution uses lots of functions, and also checks whether the game has ended!</span><br/>另一個解決方案使用許多功能，還檢查遊戲是否結束！</pre>
+<pre># Python Exercises http://www.practicepython.org/
+# Exercise 27 - Tic Tac Toe Draw
+# Exercise to draw Tic Tac Toe gameboard the game board getting input from Player 1 and Player 2
+# Last updated: 17/02/2016
+#
+# - gets input from two players
+# - checks the input for correctness: row,col
+# - exits if board is full or there is a winner
+
+
+# initialise the game board
+gameboard = [(['.']*3) for i in range(3)]
+
+# variables for input and turn count
+row_col = [0]
+turn = 1
+
+# checks that the input is valid 
+# - that it is in the format "row,col"
+# - that the position is free
+def input_valid(values):
+	# input has only two values
+    if len(values) != 2:
+        print "Input must be two numbers in format row,col e.g.  1,2 "
+        return 0
+    # input is a number between 1 and 3 (inclusive)
+    try:
+        if (1 &lt;= int(values[0]) &lt;= 3) and (1 &lt;= int(values[1]) &lt;= 3):
+            # checks if the position on the board is alreay filled
+            if gameboard[int(values[0])-1][int(values[1])-1] != '.':
+                print "Position on board already taken."
+                return 0
+            return 1
+        else:
+            print "Input values must be numbers between 1 and 3 (inclusive)"
+            return 0
+    except ValueError:
+        print "Input values must be numbers between 1 and 3 (inclusive)"
+        return 0
+
+
+# draw the board
+def draw_board(values, player):
+    # changes the value to X or O
+    gameboard[int(values[0])-1][int(values[1])-1]=player
+
+    # print the gameboard
+    for row in gameboard:
+	print row
+
+# calculate if game is over (no more '.' or has winner)
+def game_over():
+    searcht = '.'
+    
+    # check win by row
+    for i in range(3):
+        if len(set(gameboard[i])) == 1:
+            if gameboard[i][1] == '.':
+                continue
+            elif gameboard[i][1] == 'X':
+                print "Game over - Player 1 wins"
+            #elif gameboard[i][1] == 'O':
+            else:
+                print "Game over - Player 2 wins"
+            return 1
+
+    # check win by column
+    for i in range(3):
+        if gameboard[0][i] == gameboard[1][i] == gameboard[2][i]:
+            if gameboard[0][i] == '.':
+                continue
+            elif gameboard[0][i] == 'X':
+                print "Game over - Player 1 wins"
+            else:
+                print "Game over - Player 2 wins"
+            return 1
+
+    # check win by diagonal
+    if (gameboard[0][0] == gameboard[1][1] == gameboard[2][2]) or (gameboard[0][2] == gameboard[1][1] == gameboard[2][0]): 
+        if gameboard[1][1] == 'X':
+            print "Game over - Player 1 wins"
+        elif gameboard[1][1] == 'O':
+            print "Game over - Player 2 wins"
+        else:
+            return 0
+        return 1
+
+    # check board is full
+    for sublist in gameboard:
+        if searcht in sublist:
+            return 0
+
+    print "Game over - the board is filled"
+    return 1
+
+
+
+
+# main function that runs the game while board is not full
+while not game_over():
+    piece = '.'
+
+    # Player input - checks for input correctness
+    while not input_valid(row_col):
+        player = turn % 2
+        if player == 0:
+         	player = 2
+          	piece = 'O'
+        else:
+            piece = 'X'
+        p1 = raw_input('Player ' + str(player) +' input: ')
+        row_col = p1.split(",")
+
+    draw_board(row_col, piece)
+
+    row_col = [0]
+    turn += 1
+</pre>
+<p>This solution adds some bonus functions, like checking for a winner!</p>
+<p>Happy hacking!</p>
+<p>該解決方案增加了一些獎勵功能，例如檢查獲勝者！</p>
+<p>駭客入侵！</p>
+<br />Concepts 概念 << <a href='Concepts 概念.html'>Previous</a> <a href='Birthday Plots 生日情節.html'>Next</a> >> Birthday Plots 生日情節</div>
         
     <!-- footer -->
       <div class="container">
